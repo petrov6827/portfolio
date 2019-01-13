@@ -1,0 +1,175 @@
+.hotel__item,
+.sort__of {
+    position: relative;
+    padding: 30px 45px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sort__of-founded {
+    display: inline;
+    margin-right: 50px;
+}
+
+.sort__of span {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "P TSans";
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+
+.sort__of-price,
+.sort__of-type,
+.sort__of-raiting {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "P TSans";
+    text-decoration: none;
+    margin-right: 30px;
+    border-bottom: 1px dotted #81b3d2;
+    color: #000;
+}
+
+.hotel__img {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+.arrow {
+    float: right;
+    color: #81b3d2;
+    border-bottom: none;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.filter-down {
+    color: #000;
+}
+
+.hotel__title,
+.sort__of-founded {
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "P TSans";
+    line-height: 16px;
+    text-align: left;
+}
+
+.hotel__type--info,
+.hotel__price--info {
+    display: inline-block;
+    width: 110px;
+    text-align: left;
+    line-height: 0;
+    margin: 25px 0;
+}
+
+.hotel__details {
+    background-color: #81b3d2;
+    &:hover {
+        background-color: #669dc0;
+    }
+    &:active {
+        background-color: #5495bd;
+    }
+}
+
+.hotel__reserve {
+    background-color: #756357;
+    &:hover {
+        background-color: #715847;
+    }
+    &:active {
+        background-color: #73523b;
+    }
+}
+
+.hotel__raiting {
+    background-color: #f1f1f1;
+}
+
+.hotel__details,
+.hotel__reserve {
+    display: inline;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "P TSans";
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+.star {
+    top: 30px;
+    color: #81b3d2;
+    background-size: 150%;
+}
+
+.hotel__raiting {
+    bottom: 30px;
+    display: inline;
+    padding: 2px 15px;
+    text-transform: uppercase;
+    font-family: "P TSans";
+    font-size: 14px;
+    color: #666666;
+    margin: 0;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .hotel__item {
+        padding: 30px 30px;
+    }
+    .hotel__title {
+        line-height: 30px;
+    }
+
+    .hotel__img {
+        margin-bottom: 10px;
+    }
+    .hotel__details {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .hotel__type--info, 
+    .hotel__price--info {
+        display: block;
+        width: 110px;
+        text-align: left;
+        line-height: 0;
+        margin: 14px 0;
+    }
+
+    .star,
+    .hotel__raiting {
+        display: inline;
+    }
+}
+
+@media (min-width: 768px) {
+    .star,
+    .hotel__raiting {
+        position: absolute;
+        right: 45px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hotel__item {
+        padding: 30px 72px;
+    }
+
+    .star,
+    .hotel__raiting {
+        right: 72px;
+    }
+}
