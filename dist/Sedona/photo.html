@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Sedona Фотографии</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="page-header">
+            <div class="menu">
+                <a href="index.html" class="main-nav__close"></a>
+                <ul class="main-nav">                      
+                    <li class="main-nav__item"><a class="main-nav__item--active" href="/index.html">Главная</a></li>
+                    <li class="main-nav__item"><a href="/photo.html">Фото и видео</a></li>
+                    <li class="main-nav__item  main-nav__item--tablet"></li>
+                    <li class="main-nav__item"><a href="/review.html">Форма отзыва</a></li>
+                    <li class="main-nav__item"><a href="/htmlacademy.ru">HTML ACADEMY</a></li>
+                </ul> 
+            </div>
+            <div class="top-menu">
+                <a href="index.html" class="logo">                
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                        <img src="img/logo-sedona-mobile.svg" alt="logo">
+                    </picture>                                          
+                </a>
+                <a href="#" class="main-nav__toggle">&#9776</a>
+            </div>      
+        </header>
+        
+        <main>
+            <div class="main__background-photo">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
+                    <img srcset="img/bg-back-mobile@1x.jpg 1x, bg-back-mobile@2x.jpg 2x">
+                </picture>                
+                <div class="main__background-sedona">
+                    <img class="main__welcome" src="img/text-sedona.svg">
+                </div>                
+                <div class="main__triangle-photo">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+                        <img src="img/bg-intro-triangle-mobile.svg">
+                    </picture>
+                </div>
+                <div class=""></div>
+            </div>
+            <div class="main__about">
+                <p class="main__slogan  title  main__slogan-photo">Фото и видео</p>
+                <p class="main__features  main__features-photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+            </div>
+        </main>
+
+        <section class="gallery">
+            <article class="photo">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">  
+                    <img srcset="img/photo-sunset-mobile@1x.jpg 1x, img/photo-sunset-mobile@2x.jpg 2x">
+                </picture>
+                <div class="photo__info  photo__info-headphoto">
+                    <p class="photo__title  photo__title-head">Неродные просторы</p>
+                    <p class="photo__author  photo__author-head">Автор фото: Борис</p
+                    <p class="photo__like">
+                        <span class="likebtn-wrapper" data-theme="custom" data-icon_l="thmb1" data-icon_l_c="#a8a8a8" data-icon_l_c_v="#090908" data-bg_c="#f1f1f1" data-bg_c_v="#f1f1f1" data-brdr_c="#f1f1f1" data-f_family="Impact" data-counter_fs="b" data-lang="ru" data-identifier="item_1" data-show_like_label="false" data-dislike_enabled="false" data-icon_dislike_show="false">
+                        </span>
+                        <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");
+                        </script>
+                    </p>
+                </div>
+            </article>
+
+            <section class="photo__group">
+                <article class="photo  photo__else">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">  
+                        <img srcset="img/photo-cactus-mobile@1x.jpg 1x, img/photo-cactus-mobile@2x.jpg 2x">
+                    </picture>
+                    <div class="photo__info">
+                        <p class="photo__title">Местная растительность</p>
+                        <p class="photo__author">Автор фото: Cергей</p>
+                        <p class="photo__like">
+                        </p>
+                    </div>
+                </article>
+                <article class="photo  photo__else">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">  
+                        <img srcset="img/photo-roads-mobile@1x.jpg 1x, img/photo-roads-mobile@2x.jpg 2x">
+                    </picture>
+                    <div class="photo__info">
+                        <p class="photo__title">Дорога на север</p>
+                        <p class="photo__author">Автор фото: Петр</p>
+                        <p class="photo__like">                            
+                        </p>
+                    </div>
+                </article>
+                <article class="photo  photo__else">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">  
+                        <img srcset="img/photo-bridge-mobile@1x.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x">
+                    </picture>
+                    <div class="photo__info">
+                        <p class="photo__title">Мост дьявола</p>
+                        <p class="photo__author">Автор фото: Антон</p>
+                        <p class="photo__like">
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="video">
+            <div class="video__about">
+                <p class="video__slogan  title">Все еще сомневаетесь?</p>
+                <p class="video__features">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            </div>
+            <div class="video__img">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">  
+                    <img srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x">
+                </picture>
+            </div>
+            <div class="video__controls">
+                <button class="repeat"><img src="/img/icon-video-replay.svg"></button>
+                <button class="subtitle"><img src="/img/icon-video-subtitles.svg"></button>
+                <button class="full"><img src="/img/icon-video-fullscreen.svg"></button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="tag">
+                <a href="http://instagram.com/" class="hashtag" target="blank">#Visitsedona</a>
+            </div>
+            <div class="icons">
+                <div class="social">
+                    <a href="https://twitter.com/" class="icon-tw tw" target="blank">t</a>
+                    <a href="https://www.facebook.com/" class="icon-fb fb" target="blank">f</a>
+                    <a href="http://www.youtube.com/" class="icon-yt youtube" target="blank"></a>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="js/script.js"></script>        
+    </body>
+</html>
