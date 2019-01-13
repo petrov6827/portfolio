@@ -1,0 +1,471 @@
+@charset "UTF-8";
+p {
+  font-family: 'P TSans';
+  font-size: 14px;
+  text-align: center;
+  line-height: 26px;
+  margin: 0; }
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  line-height: 26px; }
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none; }
+
+.icon-facebook::before {
+  content: "\66"; }
+
+/* "f" */
+.icon-twitter::before {
+  content: "\74"; }
+
+/* "t" */
+.icon-up-dir::before {
+  content: "\25b2"; }
+
+/* "▲" */
+.icon-down-dir::before {
+  content: "\25bc"; }
+
+/* "▼" */
+.icon-star::before {
+  content: "\2605"; }
+
+/* "★" */
+.icon-check-off::before {
+  content: "\2610"; }
+
+/* "☐" */
+.icon-check-on::before {
+  content: "\2611"; }
+
+/* "☑" */
+.icon-calendar::before {
+  content: "\e800"; }
+
+/* "" */
+.icon-plus::before {
+  content: "\e801"; }
+
+/* "" */
+.icon-minus::before {
+  content: "\e802"; }
+
+/* "" */
+.icon-youtube::before {
+  content: "\f39e"; }
+
+/* "" */
+@media (max-width: 767px) {
+  body {
+    width: auto;
+    margin: 0 auto; } }
+
+@media (min-width: 768px) {
+  body {
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); } }
+
+@media (min-width: 1200px) {
+  body {
+    width: 1200px;
+    margin: 0 auto; } }
+
+@font-face {
+  font-family: 'P TSans';
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff"); }
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"), url("../fonts/symbols-sedona.woff2") format("woff2"); }
+
+.main-nav {
+  margin: 0 auto;
+  width: auto;
+  list-style: none;
+  padding-left: 0; }
+
+.main-nav__item {
+  font-family: "P TSans";
+  font-weight: bold;
+  border-bottom: 1px solid #678fa7;
+  border-top: 1px solid #9ac2da;
+  background-color: #81b3d1;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  padding: 10px; }
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase; }
+
+.main-nav__item--active {
+  color: #766357; }
+
+.logo {
+  display: inherit;
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  top: 5px; }
+
+.main-nav__toggle {
+  position: absolute;
+  color: #81b3d1;
+  right: 17px;
+  font-size: 30px;
+  font-weight: bold;
+  top: 17px;
+  text-decoration: none; }
+
+.main-nav__close {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  width: 28px;
+  height: 28px;
+  border-bottom: 3px solid #fff;
+  transform: rotate(45deg); }
+
+.main-nav__close:after {
+  content: "";
+  position: absolute;
+  right: -16px;
+  top: 15px;
+  width: 28px;
+  height: 28px;
+  border-left: 3px solid #fff;
+  transform: rotate(0deg); }
+
+.menu--show {
+  display: block; }
+
+.top-menu {
+  position: relative;
+  height: 56px; }
+
+.toggle__hidden {
+  display: none; }
+
+@media (max-width: 768px) {
+  a.main-nav__item {
+    color: #fff; }
+  .main-nav__item a {
+    color: #fff; }
+  .menu {
+    display: none; }
+  .menu--show {
+    display: block; }
+  a.main-nav__item--active {
+    color: #fff; } }
+
+@media (min-width: 768px) {
+  a.main-nav__item--active {
+    color: #000; }
+  .menu {
+    display: block; }
+  .main-nav__close,
+  .main-nav__toggle {
+    display: none; }
+  .main-nav {
+    display: flex;
+    justify-content: space-between; }
+  .main-nav__item {
+    background-color: #fff;
+    border: none;
+    padding: 10px 0;
+    width: 20%; }
+  .main-nav__item a {
+    color: #000;
+    font-size: 14px;
+    line-height: 26px; }
+  .main-nav__item a:hover {
+    color: #81b3d2; }
+  .main-nav__item a:active {
+    color: #b2b2b2; }
+  .top-menu {
+    position: absolute;
+    height: 56px;
+    top: 0;
+    left: 50%;
+    margin-left: -50px; } }
+
+@media (min-width: 1200px) {
+  .header {
+    margin: 0 95px; }
+  .top-menu {
+    margin-left: -93px; } }
+
+h1 {
+  font-family: "P Tsans";
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center; }
+
+.item {
+  width: 320px;
+  overflow: hidden;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  font-family: "P Tsans";
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: left;
+  color: #000000; }
+  .item:hover {
+    border: 2px solid #81b3d1;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    transition: 0.4s; }
+  .item:active {
+    color: #b2b2b2;
+    box-shadow: none;
+    transition: 0.1s;
+    border: 2px solid #000; }
+
+.item__title {
+  font-family: "P Tsans";
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 5px;
+  text-align: center; }
+
+.item__about {
+  font-family: "P Tsans";
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: left; }
+
+@media (max-width: 767px) {
+  h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 20px; }
+  .section {
+    margin: 0;
+    margin: 0 10px; }
+  .items {
+    display: block;
+    margin: 0;
+    margin-bottom: 0px; }
+  .item {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #202020;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+  .item__about {
+    font-family: "P Tsans";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    margin: 0 auto 20px auto;
+    width: 80%;
+    text-transform: none; }
+  .item__title {
+    font-family: "P Tsans";
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: none;
+    margin: 10px;
+    text-align: center; }
+  .main-nav__item a {
+    color: #000;
+    font-family: "P Tsans";
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border: none; } }
+
+@media (min-width: 768px) {
+  body {
+    margin-top: 100px;
+    box-shadow: -21px -16px 80px rgba(0, 0, 0, 0.5); }
+  h1 {
+    font-size: 31px; }
+  .items {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 30px; }
+  .item {
+    width: 30%;
+    overflow: hidden;
+    border: 2px solid #424242;
+    border-radius: 10px;
+    margin-right: 14px;
+    padding: 0; }
+  img {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px; }
+  .item__title {
+    font-family: "P Tsans";
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 15px;
+    text-align: center; }
+  .item__about {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 30px 20px 30px;
+    width: 80%;
+    text-transform: none; } }
+
+@media (min-width: 1200px) {
+  .items {
+    margin: 60px 100px; } }
+
+.social a {
+  background-color: #81b3d1;
+  padding: 13px;
+  font-size: 24px;
+  color: #fff;
+  font-family: "symbols-sedona";
+  text-decoration: none;
+  max-width: 46px;
+  max-height: 48px; }
+  .social a:hover {
+    background-color: #669dc0; }
+  .social a:active {
+    background-color: #5495bd; }
+
+.social {
+  text-align: center; }
+
+.tag {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "P Tsans";
+  margin-bottom: 37px;
+  margin-top: 66px; }
+
+.hashtag {
+  text-decoration: none;
+  color: #000; }
+  .hashtag:hover {
+    color: #81b3d1; }
+  .hashtag:active {
+    color: #b2b2b2; }
+
+.icon-fb {
+  padding-left: 28px;
+  padding-right: 28px;
+  width: 23px;
+  display: inline-block;
+  line-height: 24px; }
+
+.icon-yt {
+  width: 23px;
+  display: inline-block;
+  line-height: 24px; }
+
+.contacts {
+  color: #000; }
+
+.email {
+  text-transform: none; }
+
+.tag {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 5px; }
+
+.tag a:hover {
+  color: #81b3d2; }
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    font-family: "P Tsans";
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-bottom: 30px; }
+  .tag {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold; }
+  .icons {
+    display: inline-block;
+    margin-top: 30px; }
+  .icon-fb {
+    padding-left: 28px;
+    padding-right: 28px; }
+  .icons {
+    margin-top: 10px; }
+  .social {
+    margin-bottom: 30px; }
+  .social a {
+    padding: 13px;
+    margin-left: 0; }
+  .contacts {
+    color: #000; }
+  .email {
+    text-transform: none; }
+  .tag a:hover {
+    color: #81b3d2; } }
+
+@media (min-width: 1200px) {
+  .icons {
+    margin-top: 10px; }
+  .social {
+    margin-bottom: 30px; }
+  .social a {
+    padding: 13px;
+    margin-left: 0;
+    margin-bottom: 30px; }
+  .tag {
+    margin-top: 20px; } 
+  .page-header {
+    padding-top: 20px;  }
+}
