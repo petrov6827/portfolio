@@ -17,6 +17,7 @@ nav ul li a {
   text-transform: uppercase; }
 
 .language {
+  font-size: 16px;
   border: none;
   border-left: 1px solid #b8b8b8;
   border-bottom: 1px solid #b8b8b8;
@@ -53,7 +54,7 @@ nav ul li a {
     transition: 0.4s; }
   .container {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-between; }
   .language {
     border-bottom: none;
     position: relative;
