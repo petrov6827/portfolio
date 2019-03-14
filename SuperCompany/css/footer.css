@@ -1,0 +1,198 @@
+footer {
+  background-color: #f2f2f2; }
+
+.subscribe__block input {
+  display: block;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  border: none;
+  text-align: left;
+  width: 350px;
+  outline: none;
+  font-size: 10px;
+  font-family: "Open Sans";
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0 10px;
+  color: #000;
+  height: 30px;
+  vertical-align: middle;
+  line-height: 8px; }
+
+.subscribe__block input:invalid {
+  background-color: #ff8686; }
+
+.subscribe__block label {
+  font-size: 12px;
+  color: #24375e;
+  font-weight: 600;
+  margin-bottom: 24px; }
+
+p.site__map {
+  font-size: 14px;
+  text-decoration: dashed;
+  color: #24375e;
+  text-align: center;
+  border-bottom: 1px dashed; }
+
+.social__media a {
+  margin-right: 10px; }
+
+.subscribe__block {
+  position: relative; }
+
+.subscribe__btn {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  color: #fff;
+  background-color: #4d9dff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 6px 15px;
+  font-size: 13px;
+  font-family: "Open Sans"; }
+
+@media (max-width: 768px) {
+  .top__footer {
+    text-align: center; }
+  .subscribe__block {
+    position: relative;
+    margin: 0 auto; }
+  .subscribe__btn {
+    position: relative;
+    right: 0;
+    margin-bottom: 30px;
+    color: #fff;
+    background-color: #4d9dff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 6px 15px;
+    font-size: 13px;
+    font-family: "Open Sans"; }
+  .subscribe__block input {
+    width: auto; }
+  .footer__container {
+    font-size: 12px;
+    border-top: 2px solid #24375e; }
+  .subscribe__block input {
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    border: none;
+    text-align: left;
+    font-size: 10px;
+    font-family: "Open Sans";
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding: 0 10px;
+    color: #000;
+    height: 30px;
+    vertical-align: middle;
+    line-height: 8px; }
+  .site__map {
+    display: none; }
+  .top__footer {
+    padding-top: 20px; }
+  .footer__nav {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .footer__container {
+    margin: 20px; }
+  .top__footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px; }
+  .company__block-name {
+    font-weight: 600;
+    font-size: 12px;
+    color: #24375e;
+    margin-top: 4px;
+    margin-bottom: 27px; }
+  .developer__company-name {
+    font-size: 12px;
+    color: #a4a4a4; }
+  label {
+    font-size: 14px;
+    color: #24375e;
+    font-weight: 600; }
+  .subscribe__block input {
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    border: none;
+    text-align: left;
+    width: 350px;
+    outline: none;
+    font-size: 10px;
+    font-family: "Open Sans";
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0 10px;
+    color: #000;
+    height: 30px;
+    vertical-align: middle;
+    line-height: 8px; }
+  .subscribe__block input:invalid {
+    background-color: #ff8686; }
+  .subscribe__block label {
+    font-size: 12px;
+    color: #24375e;
+    font-weight: 600;
+    margin-bottom: 24px; }
+  p.site__map {
+    font-size: 14px;
+    text-decoration: dashed;
+    color: #24375e;
+    text-align: center;
+    border-bottom: 1px dashed; }
+  .social__media a {
+    margin-right: 10px; }
+  .subscribe__block {
+    position: relative; }
+  .subscribe__btn {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    color: #fff;
+    background-color: #4d9dff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 6px 15px;
+    font-size: 13px;
+    font-family: "Open Sans"; }
+  button.subscribe__btn:hover {
+    background: #2100ff; }
+  .top__footer {
+    border-bottom: 2px solid #a0a7b7;
+    padding-bottom: 12px; }
+  .footer__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-right: 45px; }
+  .footer__nav-item {
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0;
+    color: #24375e;
+    font-weight: 600;
+    list-style: none; }
+  .footer__nav-item li a {
+    font-size: 12px;
+    color: #24375e;
+    font-weight: 400;
+    text-decoration: none; } }
+
+@media (min-width: 1140px) {
+  .footer__container {
+    width: 1140px;
+    margin: 0 auto; } }

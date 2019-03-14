@@ -1,0 +1,29 @@
+
+body {
+    font-family: "Open Sans";
+    margin: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media ( max-width: 768px ) {
+
+}
+
+@media ( min-width: 768px ) {
+    .container {
+        
+        margin: 0 auto;
+    }
+}
+
+@media ( min-width: 1140px ) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }    
+}
