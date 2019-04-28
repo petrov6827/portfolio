@@ -351,7 +351,6 @@ h1 {
     display: block;
     margin: 0;
     margin-bottom: 0px; }
-
   .item {
     display: flex;
     flex-direction: column;
@@ -399,53 +398,39 @@ h1 {
   .contacts__img {
     display: none;  }
   .contacts__info-item {
-    margin-bottom: 15px;
-  }
+    margin-bottom: 15px;  }
   .contacts__info-item {
-    margin-left: 20px;
-  }
+    margin-left: 20px;  }
   .contacts__info-item__img{
     display: inline-block;
     width: 30px;
     height: 30px;
     vertical-align: -webkit-baseline-middle;
-    margin-right: 10px;
-  }
+    margin-right: 10px;  }
   .order {
     border: 2px solid #424242;
     border-radius: 20px;
     padding: 5px;
-    color: #000;
-  }
-
-
-  }
+    color: #000;  }
   .contacts{
-    display: none;
-  }
+    display: none; }
   .order a {
     color: #000;
-    text-decoration: none;
-  }
+    text-decoration: none; }
   }
 
 @media (min-width: 768px) {
-  body {
-    }
   h1 {
     font-size: 31px;
     margin: 0; }
   .items {
     display: flex;
     justify-content: space-around;
-    margin: 30px;
-  }
-
+    margin: 30px; }
   .items__2 {
     display: flex;
-    justify-content: space-evenly;
-    margin: 30px;
-  }
+    justify-content: space-around;
+    margin: 30px;  }
   .item {
     width: 30%;
     overflow: hidden;
@@ -455,8 +440,8 @@ h1 {
     padding: 0; }
   img {
     text-align: center;
-    margin-bottom: 10px;
-     }
+    margin-bottom: 10px;     }
+  
   .item__title {
     font-family: "P Tsans";
     font-size: 26px;
@@ -474,8 +459,7 @@ h1 {
   .items a,
   .items__2 a {
     max-width: 320px;
-    min-height: 100px;
-  }
+    min-height: 100px;  }
   .main-nav__item-name {
     justify-content: flex-start;
   }
@@ -483,50 +467,40 @@ h1 {
     border: 2px solid #424242;
     border-radius: 20px;
     padding: 5px;    
-    color: #000; ;
-  }
+    color: #000; }
   .order a {
     color: #000;
-    text-decoration: none;
-  }
+    text-decoration: none;  }
   .order:hover {    
     border: 2px solid #81b3d1;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
     transition: 0.4s;
-    color: #000;
-    }
+    color: #000;    }
   .contacts__main {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 50px;
-  }
-
+    margin-bottom: 50px;  }
   .contacts__promo {
     display: block;
     margin: 30px auto;
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: normal;
-    width: 50%;}
-
+    width: 50%; }
   .contacts__img {
     zoom: 0.5;
     flex: 1.1;
-    margin-left: 5%;
-  }
+    margin-left: 5%;  }
   .contacts__info {
     margin-top: 100px;
     flex: 1;
-    margin-left: 30px;
-  }
-
+    margin-left: 30px;  }
   .contacts__info-item__img{
     display: inline-block;
     width: 30px;
     height: 30px;
     vertical-align: -webkit-baseline-middle;
-    margin-right: 10px;
-  }
+    margin-right: 10px;  }
 }
 
 @media (min-width: 1200px) {
@@ -536,16 +510,13 @@ h1 {
   .items__2 a {    
     min-width: 320px;
     min-height: 100px;
-    margin-bottom: 10px;
-  }
+    margin-bottom: 10px;  }
   .main-nav__item-name {
-    display: none;
-  }
+    display: none;  }
   .contacts__img {
     zoom: 0.5;
-    margin-left: 10%;
+    margin-left: 10%;  }
   }
-}
 
 .social a {
   background-color: #81b3d1;
@@ -560,16 +531,12 @@ h1 {
     background-color: #669dc0; }
   .social a:active {
     background-color: #5495bd; }
-
 .clearfix::after {
   content: "";
   display: table;
-  clear: both;
-}
-
+  clear: both;}
 .social {
   text-align: center; }
-
 .tag {
   text-align: center;
   text-decoration: none;
@@ -583,7 +550,6 @@ h1 {
   padding: 10px;
   margin: 0 auto;
   width: 60%;}
-
 .hashtag {
   text-decoration: none;
   color: #000; }
@@ -591,29 +557,23 @@ h1 {
     color: #81b3d1; }
   .hashtag:active {
     color: #b2b2b2; }
-
 .icon-fb {
   padding-left: 28px;
   padding-right: 28px;
   width: 23px;
   display: inline-block;
   line-height: 24px; }
-
 .icon-yt {
   width: 23px;
   display: inline-block;
   line-height: 24px; }
-
 .contacts {
   color: #000; }
-
 .email {
   text-transform: none; }
-
 .tag {
   font-size: 16px;
   margin-bottom: 5px; }
-
 .tag a:hover {
   color: #81b3d2; }
 
@@ -625,8 +585,7 @@ h1 {
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
-    text-decoration: none;
-    }
+    text-decoration: none;    }
   .tag {
     display: inline-block;
     text-decoration: none;
@@ -672,7 +631,4 @@ h1 {
     padding: 13px;
     margin-left: 0;
     margin-bottom: 30px; }
-  .tag {
-     } 
-  
 }
