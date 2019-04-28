@@ -87,8 +87,8 @@ p {
     } 
     .main-nav {
       justify-content: flex-end;
-
-      }}
+    }
+  }
 
 @media (min-width: 1200px) {
   body {
@@ -183,8 +183,7 @@ p {
 .item__march19 {
     color: #000;
     display: block;
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px; }
 
 @media (max-width: 768px) {
   a.main-nav__item {
@@ -197,9 +196,7 @@ p {
     display: block; }
   a.main-nav__item--active {
     color: #fff; }
-  .my_name {
-    
-    } }
+}
 
 @media (min-width: 768px) {
   a.main-nav__item--active {
@@ -245,6 +242,11 @@ p {
     margin-right: 50%;
     width: 20%;
   }
+
+  .main-nav__item-name {
+    display: none;
+  }
+
   footer {
     background: #f1f1f1;
     padding-top: 15px;
@@ -262,7 +264,11 @@ p {
     font-weight: normal;
     width: 50%;
   }
-
+  h1 {
+  font-family: "P Tsans";
+  font-size: 31px;
+  font-weight: bold;
+  text-align: center; }
 }
 
 @media (min-width: 1200px) {
@@ -288,30 +294,24 @@ p {
     font-size: 16px;
     font-weight: normal;
     width: 50%;
-  }
-  
+  }  
 
-h1 {
-  font-family: "P Tsans";
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center; }
+  .item {
+    width: 320px;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    font-family: "P Tsans";
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    color: #000000; }
 
-.item {
-  width: 320px;
-  overflow: hidden;
-  border: 1px solid #f1f1f1;
-  border-radius: 5px;
-  padding: 20px;
-  border: 1px solid #f1f1f1;
-  border-radius: 5px;
-  font-family: "P Tsans";
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;
-  text-decoration: none;
-  text-align: left;
-  color: #000000; }
   .item:hover {
     border: 2px solid #81b3d1;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
@@ -337,13 +337,19 @@ h1 {
   font-weight: normal;
   text-decoration: none;
   text-align: left; }
+h1 {
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
 
 @media (max-width: 767px) {
   h1 {
     margin-bottom: 20px;
     margin-top: 20px;
     text-align: left;
-    margin-left: 20px; }
+    margin-left: 20px; 
+    text-align: center;}
   .section {
     margin: 0;
     margin: 0 10px; }
@@ -372,7 +378,8 @@ h1 {
     text-align: left;
     margin: 0 auto 20px auto;
     width: 80%;
-    text-transform: none; }
+    text-transform: none;
+    color: #000; }
   .item__title {
     font-family: "P Tsans";
     font-size: 21px;
@@ -380,7 +387,8 @@ h1 {
     text-decoration: none;
     text-transform: none;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+    color: #000; }
   .main-nav__item a {
     color: #000;
     font-family: "P Tsans";
@@ -417,19 +425,26 @@ h1 {
   .order a {
     color: #000;
     text-decoration: none; }
+  .item {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
   }
+
+}
 
 @media (min-width: 768px) {
   h1 {
     font-size: 31px;
-    margin: 0; }
+    margin: 0; 
+    text-align: center;}
   .items {
     display: flex;
     justify-content: space-around;
     margin: 30px; }
   .items__2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 30px;  }
   .item {
     width: 30%;
@@ -441,7 +456,7 @@ h1 {
   img {
     text-align: center;
     margin-bottom: 10px;     }
-  
+
   .item__title {
     font-family: "P Tsans";
     font-size: 26px;
@@ -516,7 +531,7 @@ h1 {
   .contacts__img {
     zoom: 0.5;
     margin-left: 10%;  }
-  }
+}
 
 .social a {
   background-color: #81b3d1;
@@ -576,6 +591,7 @@ h1 {
   margin-bottom: 5px; }
 .tag a:hover {
   color: #81b3d2; }
+
 
 @media (min-width: 768px) {
   footer {
