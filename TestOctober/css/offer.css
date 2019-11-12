@@ -1,0 +1,97 @@
+@media (min-width: 1920px) {
+  .offer {
+    background: #1f090e; } }
+
+.offer {
+  display: flex;
+  background-color: #1f090e;
+  height: 780px; }
+
+.offer__container {
+  display: flex;
+  width: 1410px;
+  margin: 0 auto;
+  justify-content: space-between; }
+
+.about_text {
+  text-transform: uppercase;
+  font-family: bold;
+  font-size: 30px;
+  color: #fff;
+  font-family: "PT Sans Caption"; }
+
+.about {
+  position: relative;
+  color: #000;
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-weight: 700; }
+
+p.about_text_yellow {
+  color: #bf9037;
+  font-size: 90px;
+  line-height: 100px;
+  margin: 0 0 0 47px; }
+
+.offer__partner {
+  width: 290px;
+  margin-top: 135px; }
+
+.partner__name {
+  position: absolute;
+  width: 50%;
+  top: 195px;
+  color: #fff;
+  border-bottom: 1px solid #bf9037; }
+
+.partner__about {
+  color: #bf9037;
+  line-height: 25px; }
+
+.offer__list {
+  display: block;
+  position: relative;
+  font-size: 30px;
+  line-height: 40px;
+  color: #bf9037;
+  text-transform: none;
+  margin-left: 0;
+  margin-bottom: 90px; }
+  .offer__list li {
+    margin-bottom: 20px; }
+
+.offer__list::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 247px;
+  border-left: 1px solid #bf9037;
+  top: 19px;
+  left: 22px; }
+
+.offer__order {
+  position: relative;
+  color: #000;
+  background: #bf9037;
+  font-size: 25px;
+  border: 1px solid #000;
+  border-radius: 55px;
+  padding: 20px 75px;
+  text-transform: uppercase;
+  margin: 130px;
+  font-weight: 300; }
+
+.offer__order::before {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 1px;
+  border-bottom: 1px solid #bf9037;
+  top: 33px;
+  left: -109px; }
+
+.man_image {
+  position: absolute;
+  left: 50%;
+  top: 108px; }
