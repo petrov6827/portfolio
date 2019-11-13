@@ -301,6 +301,8 @@ p.item__title {
     border-radius: 20px;    
     font-family: "P Tsans";
     font-size: 17px;
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
