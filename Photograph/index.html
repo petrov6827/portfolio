@@ -189,15 +189,14 @@
             <img src="./img/blogplus2.png">
         </div>
     </div>
-    <div id="form" class="form">
-        <form action="/#form" method="POST" class="form__content">
+    <div class="form">
+        <form action="/#form" method="POST" class="form__content" id="form" >
             <p class="form__title">Let's work?</p>
             <input id="name" name="name" type="text" placeholder="*Your name">
             <input id="email" name="email" type="email" placeholder="*Your email" required>
             <input id="form__message" name="message" placeholder="Your messages"></input>
             <div id="error"></div>
             <button onclick="pop()" type="submit" id="form__send_btn" class="form__send_btn">Send Message</button>
-
             <a href="#header" id="form__up" class="form__up">
                 <img src="./img/formup.png">
             </a>
@@ -205,8 +204,8 @@
             <img class="form__plus2" src="./img/formplus2.png">
         </form>
         <div id="popup">
-            <h1>I got ur message!<h1>
-                    <a onclick="pop()" class="popup__close">Close</a>
+            <h1>I got ur message!</h1>
+            <a onclick="pop()" class="popup__close">Close</a>
         </div>
     </div>
     <footer>
