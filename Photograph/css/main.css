@@ -1,27 +1,27 @@
 @font-face {
   font-family: "Muli-light";
-  src: url("../fonts/Muli-Light.ttf") format("truetype");
+  src: url("./fonts/Muli-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: light;
 }
 
 @font-face {
   font-family: "Muli-xlight";
-  src: url("../fonts/Muli-ExtraLight.ttf") format("truetype");
+  src: url("./fonts/Muli-ExtraLight.ttf") format("truetype");
   font-style: normal;
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Muli-semibold";
-  src: url("../fonts/Muli-Semibold.ttf") format("truetype");
+  src: url("./fonts/Muli-SemiBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Trirong";
-  src: url("../fonts/Trirong-Light.ttf") format("truetype");
+  src: url("./fonts/Trirong-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: light;
 }
@@ -34,7 +34,7 @@ body {
 
 header {
   position: relative;
-  background: url(../img/header__girl.png) no-repeat right;
+  background: url(./img/header__girl.png) no-repeat right;
   background-color: #2b2d5c;
   background-blend-mode: screen;
   min-height: 900px;
@@ -267,7 +267,7 @@ a.doing__item:active {
 
 .clients {
   position: relative;
-  background: url("../img/clients.png");
+  background: url("./img/clients.png");
   background-color: #4c4d69;
   background-blend-mode: soft-light;
   height: 300px;
@@ -311,7 +311,7 @@ a.doing__item:active {
   width: 535px;
   height: 895px;
   margin: 0;
-  background: url(../img/port.png) no-repeat center;
+  background: url(./img/port.png) no-repeat center;
   margin-bottom: 105px;
 }
 
@@ -537,7 +537,7 @@ a.doing__item:active {
 
 .form {
   position: relative;
-  background: url(../img/formbg.png);
+  background: url(./img/formbg.png);
   background-color: #2b2d5c;
   height: 530px;
   border-bottom: 1px solid #55577d;
