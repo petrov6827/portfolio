@@ -1,28 +1,28 @@
 
 @font-face {
   font-family: "Muli-light";
-  src: url("./fonts/Muli-Light.ttf") format("truetype");
+  src: url("../fonts/Muli-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: light;
 }
 
 @font-face {
   font-family: "Muli-xlight";
-  src: url("./fonts/Muli-ExtraLight.ttf") format("truetype");
+  src: url("../fonts/Muli-ExtraLight.ttf") format("truetype");
   font-style: normal;
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Muli-semibold";
-  src: url("./fonts/Muli-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Muli-SemiBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Trirong";
-  src: url("./fonts/Trirong-Light.ttf") format("truetype");
+  src: url("../fonts/Trirong-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: light;
 }
