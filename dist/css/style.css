@@ -4,107 +4,140 @@ p {
   font-size: 14px;
   text-align: center;
   line-height: 26px;
-  margin: 0; }
+  margin: 0;
+}
 
 .title {
   font-weight: bold;
   font-size: 18px;
   text-align: center;
-  line-height: 26px; }
+  line-height: 26px;
+}
 
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
+[class^='icon-']::before,
+[class*=' icon-']::before {
   display: inline-block;
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
   font-weight: normal;
   line-height: 1em;
-  font-family: "symbols-sedona";
+  font-family: 'symbols-sedona';
   text-align: center;
   text-transform: none;
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
-  speak: none; }
+}
 
 .icon-facebook::before {
-  content: "\66"; }
+  content: '\66';
+}
 
 /* "f" */
 .icon-twitter::before {
-  content: "\74"; }
+  content: '\74';
+}
 
 /* "t" */
 .icon-up-dir::before {
-  content: "\25b2"; }
+  content: '\25b2';
+}
 
 /* "▲" */
 .icon-down-dir::before {
-  content: "\25bc"; }
+  content: '\25bc';
+}
 
 /* "▼" */
 .icon-star::before {
-  content: "\2605"; }
+  content: '\2605';
+}
 
 /* "★" */
 .icon-check-off::before {
-  content: "\2610"; }
+  content: '\2610';
+}
 
 /* "☐" */
 .icon-check-on::before {
-  content: "\2611"; }
+  content: '\2611';
+}
 
 /* "☑" */
 .icon-calendar::before {
-  content: "\e800"; }
+  content: '\e800';
+}
 
 /* "" */
 .icon-plus::before {
-  content: "\e801"; }
+  content: '\e801';
+}
 
 /* "" */
 .icon-minus::before {
-  content: "\e802"; }
+  content: '\e802';
+}
 
 /* "" */
 .icon-youtube::before {
-  content: "\f39e"; }
+  content: '\f39e';
+}
 
 /* "" */
 @media (max-width: 767px) {
   body {
     width: auto;
-    margin: 0 auto; } }
+    margin: 0 auto;
+  }
+  .my_name {
+    display: none;
+  }
+}
 
 @media (min-width: 768px) {
   body {
     margin: 0 auto;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); } }
+  }
+  .main-nav {
+    justify-content: flex-end;
+
+    width: 768px;
+  }
+}
 
 @media (min-width: 1200px) {
   body {
+    display: contents;
+  }
+  .main-nav {
     width: 1200px;
-    margin: 0 auto; } }
+  }
+}
 
 @font-face {
   font-family: 'P TSans';
-  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff"); }
+  src: url('../fonts/ptsans.woff2') format('woff2'),
+    url('../fonts/ptsans.woff') format('woff');
+}
 
 @font-face {
   font-weight: normal;
   font-style: normal;
-  font-family: "symbols-sedona";
-  src: url("../fonts/symbols-sedona.woff") format("woff"), url("../fonts/symbols-sedona.woff2") format("woff2"); }
+  font-family: 'symbols-sedona';
+  src: url('../fonts/symbols-sedona.woff') format('woff'),
+    url('../fonts/symbols-sedona.woff2') format('woff2');
+}
 
 .main-nav {
   margin: 0 auto;
   width: auto;
   list-style: none;
-  padding-left: 0; }
+  padding-left: 0;
+}
 
 .main-nav__item {
-  font-family: "P TSans";
+  font-family: 'P TSans';
   font-weight: bold;
   border-bottom: 1px solid #678fa7;
   border-top: 1px solid #9ac2da;
@@ -112,15 +145,19 @@ p {
   text-align: center;
   font-size: 18px;
   line-height: 40px;
-  padding: 10px; }
+  padding: 10px;
+  background: #f1f1f1;
+}
 
 .main-nav__item a {
   text-decoration: none;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .main-nav__item--active {
-  color: #766357; }
+  color: #766357;
+}
 
 .logo {
   display: inherit;
@@ -129,16 +166,18 @@ p {
   position: relative;
   margin: 0;
   text-align: center;
-  top: 5px; }
+  top: 5px;
+}
 
 .main-nav__toggle {
   position: absolute;
   color: #81b3d1;
-  right: 17px;
+  right: 30px;
   font-size: 30px;
   font-weight: bold;
-  top: 17px;
-  text-decoration: none; }
+  top: 6px;
+  text-decoration: none;
+}
 
 .main-nav__close {
   position: absolute;
@@ -146,326 +185,719 @@ p {
   top: 7px;
   width: 28px;
   height: 28px;
-  border-bottom: 3px solid #fff;
-  transform: rotate(45deg); }
+  border-bottom: 3px solid #000;
+  transform: rotate(45deg);
+}
 
 .main-nav__close:after {
-  content: "";
+  content: '';
   position: absolute;
   right: -16px;
   top: 15px;
   width: 28px;
   height: 28px;
-  border-left: 3px solid #fff;
-  transform: rotate(0deg); }
+  border-left: 3px solid #000;
+  transform: rotate(0deg);
+}
 
 .menu--show {
-  display: block; }
+  display: block;
+}
 
 .top-menu {
   position: relative;
-  height: 56px; }
+  height: 56px;
+}
 
 .toggle__hidden {
-  display: none; }
-
-@media (max-width: 768px) {
-  a.main-nav__item {
-    color: #fff; }
-  .main-nav__item a {
-    color: #fff; }
-  .menu {
-    display: none; }
-  .menu--show {
-    display: block; }
-  a.main-nav__item--active {
-    color: #fff; } }
-
-@media (min-width: 768px) {
-  a.main-nav__item--active {
-    color: #000; }
-  .menu {
-    display: block; }
-  .main-nav__close,
-  .main-nav__toggle {
-    display: none; }
-  .main-nav {
-    display: flex;
-    justify-content: space-between; }
-  .main-nav__item {
-    background-color: #fff;
-    border: none;
-    padding: 10px 0;
-    width: 20%; }
-  .main-nav__item a {
-    color: #000;
-    font-size: 14px;
-    line-height: 26px; }
-  .main-nav__item a:hover {
-    color: #81b3d2; }
-  .main-nav__item a:active {
-    color: #b2b2b2; }
-  .top-menu {
-    position: absolute;
-    height: 56px;
-    top: 0;
-    left: 50%;
-    margin-left: -50px; } }
-
-@media (min-width: 1200px) {
-  .header {
-    margin: 0 95px; }
-  .top-menu {
-    margin-left: -93px; } }
+  display: none;
+}
 
 h1 {
-  font-family: "P Tsans";
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center; }
-
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 20px;
+  text-align: center;
+}
+.section {
+  margin: 0;
+  margin: 0 10px;
+}
+.items {
+  display: block;
+  margin: 0;
+  margin-bottom: 0px;
+}
 .item {
-  width: 320px;
-  overflow: hidden;
-  border: 1px solid #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #202020;
   border-radius: 5px;
-  padding: 20px;
-  border: 1px solid #f1f1f1;
-  border-radius: 5px;
-  font-family: "P Tsans";
-  font-size: 14px;
-  line-height: 26px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* .item__about {
+  font-family: 'P Tsans';
+  font-size: 16px;
+  line-height: 24px;
   font-weight: normal;
   text-decoration: none;
   text-align: left;
-  color: #000000; }
-  .item:hover {
-    border: 2px solid #81b3d1;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
-    transition: 0.4s; }
-  .item:active {
-    color: #b2b2b2;
-    box-shadow: none;
-    transition: 0.1s;
-    border: 2px solid #000; }
-
+  margin: 0 auto 20px auto;
+  width: 80%;
+  text-transform: none;
+  color: #000;
+} */
 .item__title {
-  font-family: "P Tsans";
+  font-family: 'P Tsans';
   font-size: 21px;
   font-weight: bold;
   text-decoration: none;
+  text-transform: none;
+  margin: 10px;
+  text-align: center;
+  color: #000;
+}
+.main-nav__item a {
+  color: #000;
+  font-family: 'P Tsans';
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
   text-transform: uppercase;
-  margin: 5px;
-  text-align: center; }
+  text-align: center;
+  border: none;
+}
+.contacts__promo {
+  font-family: 'P Tsans';
+  font-size: 16px;
+  margin: 30px;
+  text-decoration: none;
+}
 
-.item__about {
-  font-family: "P Tsans";
-  font-size: 18px;
+.contacts__info-item {
+  margin-bottom: 15px;
+}
+.contacts__info-item {
+  margin-left: 20px;
+}
+.contacts__info-item__img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: -webkit-baseline-middle;
+  margin-right: 10px;
+}
+.order {
+  border: 2px solid #424242;
+  border-radius: 20px;
+  padding: 5px;
+  color: #000;
+}
+.order a {
+  color: #000;
+  text-decoration: none;
+}
+.item {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  overflow: hidden;
+  border: 2px solid #424242;
+  border-radius: 10px;
+  padding: 0;
+  margin: 10px;
+}
+
+.item__img {
+  display: flex;
+  justify-content: center;
+}
+
+.item__img:hover {
+  filter: contrast(20%);
+}
+
+p.item__title {
+  font-family: 'P Tsans';
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+/* .item__about {
+  font-size: 16px;
   font-weight: normal;
+  text-transform: none;
+  color: #000;
+} */
+
+.order {
+  border: 2px solid #424242;
+  border-radius: 20px;
+  font-family: 'P Tsans';
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'P Tsans';
+  margin: 10px;
+  font-size: 25px;
+}
+.footer__list {
+  list-style: none;
+  padding-left: 0;
+}
+footer .tag a {
   text-decoration: none;
-  text-align: left; }
+  color: #000;
+}
 
-@media (max-width: 767px) {
-  h1 {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 20px; }
-  .section {
-    margin: 0;
-    margin: 0 10px; }
-  .items {
-    display: block;
-    margin: 0;
-    margin-bottom: 0px; }
-  .item {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #202020;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
-  .item__about {
-    font-family: "P Tsans";
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
-    text-decoration: none;
-    text-align: left;
-    margin: 0 auto 20px auto;
-    width: 80%;
-    text-transform: none; }
-  .item__title {
-    font-family: "P Tsans";
-    font-size: 21px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: none;
-    margin: 10px;
-    text-align: center; }
-  .main-nav__item a {
-    color: #000;
-    font-family: "P Tsans";
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    border: none; } }
-
-@media (min-width: 768px) {
-  body {
-    margin-top: 100px;
-    box-shadow: -21px -16px 80px rgba(0, 0, 0, 0.5); }
-  h1 {
-    font-size: 31px; }
-  .items {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px 30px; }
-  .item {
-    width: 30%;
-    overflow: hidden;
-    border: 2px solid #424242;
-    border-radius: 10px;
-    margin-right: 14px;
-    padding: 0; }
-  img {
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 20px; }
-  .item__title {
-    font-family: "P Tsans";
-    font-size: 26px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 15px;
-    text-align: center; }
-  .item__about {
-    font-size: 16px;
-    font-weight: normal;
-    margin: 0 30px 20px 30px;
-    width: 80%;
-    text-transform: none; } }
-
-@media (min-width: 1200px) {
-  .items {
-    margin: 60px 100px; } }
-
-.social a {
-  background-color: #81b3d1;
-  padding: 13px;
-  font-size: 24px;
-  color: #fff;
-  font-family: "symbols-sedona";
+.items a {
   text-decoration: none;
-  max-width: 46px;
-  max-height: 48px; }
-  .social a:hover {
-    background-color: #669dc0; }
-  .social a:active {
-    background-color: #5495bd; }
+  outline: none;
+}
 
-.social {
-  text-align: center; }
+.main-nav__item {
+  font-family: 'P TSans';
+  font-weight: bold;
+  border-bottom: 1px solid #678fa7;
+  background-color: #e1e1e1;
+  text-align: center;
+  line-height: 40px;
+  padding: 10px;
+}
+
+.main-nav__item-name {
+  font-size: 26px;
+}
 
 .tag {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 21px;
   font-weight: bold;
-  font-family: "P Tsans";
-  margin-bottom: 37px;
-  margin-top: 66px; }
+  font-size: 16px;
+  margin: 5px auto;
+  padding: 10px;
+  width: 50%;
+}
 
-.hashtag {
-  text-decoration: none;
-  color: #000; }
-  .hashtag:hover {
-    color: #81b3d1; }
-  .hashtag:active {
-    color: #b2b2b2; }
-
-.icon-fb {
-  padding-left: 28px;
-  padding-right: 28px;
-  width: 23px;
-  display: inline-block;
-  line-height: 24px; }
-
-.icon-yt {
-  width: 23px;
-  display: inline-block;
-  line-height: 24px; }
-
-.contacts {
-  color: #000; }
+.contacts__contacts {
+  display: none;
+}
 
 .email {
-  text-transform: none; }
+  text-transform: none;
+}
 
-.tag {
+.contacts__info-item a {
+  color: #000;
+  text-decoration: none;
+  font-family: 'P Tsans';
+}
+
+.contacts__info-item a:hover {
+  color: #81b3d1;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.aboutme {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutme__photo {
+  border-radius: 150px;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  zoom: 0.5;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.aboutme__text {
+  width: 55%;
+  font-family: 'P Tsans';
   font-size: 16px;
-  margin: 0;
-  margin-bottom: 5px; }
+  align-items: center;
+  text-align: left;
+}
 
-.tag a:hover {
-  color: #81b3d2; }
+@media (max-width: 768px) {
+  a.main-nav__item {
+    color: #000;
+  }
+  .main-nav__item a {
+    color: #000;
+  }
+  .menu {
+    display: none;
+  }
+  .menu--show {
+    display: block;
+  }
+  .main-nav__item--active {
+    color: #fff;
+  }
+  .contacts__img {
+    display: none;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 0 auto;
+  }
+  .aboutme__skills {
+    padding-left: 18px;
+  }
+}
 
 @media (min-width: 768px) {
+  a.main-nav__item--active {
+    color: #000;
+  }
+  .menu {
+    display: block;
+    background: #f1f1f1;
+  }
+  .main-nav__close,
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main-nav__item {
+    background-color: #fff;
+    border: none;
+    padding: 10px 0;
+    width: 10%;
+    background: #f1f1f1;
+  }
+  .main-nav__item a {
+    color: #000;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .main-nav__item a:hover {
+    color: #81b3d2;
+    transition: 0.2s;
+  }
+  .main-nav__item a:active {
+    color: #b2b2b2;
+  }
+  .top-menu {
+    position: absolute;
+    height: 56px;
+    top: 0;
+    left: 50%;
+    margin-left: -50px;
+  }
+  .my_name {
+    font-family: 'P TSans';
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 10px;
+    top: 5px;
+    left: 25px;
+    margin-right: 50%;
+    width: 20%;
+  }
+  .main-nav__item-name {
+    display: none;
+  }
   footer {
+    background: #f1f1f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  ul.footer__list {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+  }
+  .page-header {
+    margin-bottom: 20px;
+  }
+  .order__promo {
+    display: block;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: normal;
+    width: 50%;
+  }
+  h1 {
+    font-family: 'P Tsans';
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    text-align: center;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: inherit;
+  }
+  .item {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    margin-right: 14px;
+    padding: 0;
+  }
+  .item:hover {
+    border: 2px solid #81b3d1;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    transition: 0.6s;
+  }
+  img {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .item__title {
+    font-family: 'P Tsans';
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 15px;
+    text-align: center;
+  }
+  .item__about {
+    position: absolute;
+    top: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 30px 20px 30px;
+    width: 80%;
+    text-transform: none;
+    visibility: hidden;
+  }
+
+  .items a {
+    max-width: 320px;
+    min-height: 100px;
+  }
+  .main-nav__item-name {
+    justify-content: flex-start;
+  }
+  .order {
+    border: 2px solid #424242;
+    border-radius: 20px;
+    padding: 5px;
+    color: #000;
+  }
+  .order a {
+    color: #000;
+    text-decoration: none;
+  }
+  .order:hover {
+    border: 2px solid #81b3d1;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+    color: #000;
+  }
+  .contacts__main {
     display: flex;
     justify-content: space-around;
-    font-family: "P Tsans";
+    margin-bottom: 50px;
+  }
+  .contacts__promo {
+    display: block;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: normal;
+    width: 50%;
+  }
+  .contacts__img {
+    zoom: 0.5;
+    flex: 1.1;
+    margin-left: 5%;
+  }
+  .contacts__info {
+    margin-top: 100px;
+    flex: 1;
+    margin-left: 30px;
+  }
+  .contacts__info-item__img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: -webkit-baseline-middle;
+    margin-right: 10px;
+  }
+  footer {
+    font-family: 'P Tsans';
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
     text-decoration: none;
-    padding-bottom: 30px; }
+  }
   .tag {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: bold; }
+    font-weight: bold;
+    width: auto;
+    padding: 5px 10px;
+    margin: 5px;
+  }
   .icons {
     display: inline-block;
-    margin-top: 30px; }
+    margin-top: 30px;
+  }
   .icon-fb {
     padding-left: 28px;
-    padding-right: 28px; }
+    padding-right: 28px;
+  }
   .icons {
-    margin-top: 10px; }
+    margin-top: 10px;
+  }
   .social {
-    margin-bottom: 30px; }
-  .social a {
-    padding: 13px;
-    margin-left: 0; }
-  .contacts {
-    color: #000; }
-  .email {
-    text-transform: none; }
-  .tag a:hover {
-    color: #81b3d2; } }
-
-@media (min-width: 1200px) {
-  .icons {
-    margin-top: 10px; }
-  .social {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+  }
   .social a {
     padding: 13px;
     margin-left: 0;
-    margin-bottom: 30px; }
-  .tag {
-    margin-top: 20px; } 
-  .page-header {
-    padding-top: 20px;  }
+  }
+  .contacts {
+    color: #000;
+  }
+  .contacts:hover {
+    transition: 0.2s;
+  }
+  .email {
+    text-transform: none;
+  }
+  .tag a:hover {
+    color: #81b3d2;
+  }
+  .order a:hover {
+    color: #000;
+  }
+  .main-nav__item-name {
+    display: none;
+  }
+  .aboutme {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .aboutme__photo {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 300px;
+    min-width: 250px;
+    zoom: 0.8;
+    margin-top: 40px;
+    margin-left: 120px;
+  }
+  .aboutme__text {
+    width: 70%;
+    font-family: 'P Tsans';
+    font-size: 18px;
+    align-items: center;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    margin: 0 95px;
+    margin-bottom: 20px;
+  }
+  .top-menu {
+    margin-left: -93px;
+  }
+  .my_name {
+    margin-right: 58%;
+  }
+  .menu {
+    background: #f1f1f1;
+  }
+  main {
+    width: 1200px;
+  }
+  footer {
+    background: #f1f1f1;
+    padding-top: 15px;
+  }
+  ul.footer__list {
+    width: 1200px;
+  }
+  .order__promo {
+    display: block;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: normal;
+    width: 50%;
+  }
+  .item:hover {
+    border: 2px solid #81b3d1;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    transition: 0.2s;
+  }
+  .item:active {
+    color: #b2b2b2;
+    box-shadow: none;
+    transition: 0.1s;
+    border: 2px solid #000;
+  }
+  .item__title {
+    font-family: 'P Tsans';
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 5px;
+    text-align: center;
+  }
+  /* .item__about {
+    font-family: 'P Tsans';
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+  } */
+
+  h1 {
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contacts {
+    color: #000;
+  }
+  .email {
+    text-transform: none;
+  }
+  .tag a:hover {
+    color: #81b3d2;
+  }
+  .icons {
+    margin-top: 10px;
+  }
+  .social {
+    margin-bottom: 30px;
+  }
+  .social a {
+    padding: 13px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .items a {
+    min-width: 320px;
+    min-height: 100px;
+    margin-bottom: 10px;
+  }
+  .main-nav__item-name {
+    display: none;
+  }
+  .contacts__img {
+    zoom: 0.5;
+    margin-left: 10%;
+  }
+  .main-nav {
+    width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  main {
+    width: 1400px;
+  }
+}
+.social a {
+  background-color: #81b3d1;
+  padding: 13px;
+  font-size: 24px;
+  color: #fff;
+  font-family: 'symbols-sedona';
+  text-decoration: none;
+  max-width: 46px;
+  max-height: 48px;
+}
+.social a:hover {
+  background-color: #669dc0;
+}
+.social a:active {
+  background-color: #5495bd;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.social {
+  text-align: center;
+}
+
+.hashtag {
+  text-decoration: none;
+  color: #000;
+}
+.hashtag:hover {
+  color: #81b3d1;
+}
+.hashtag:active {
+  color: #b2b2b2;
+}
+.icon-fb {
+  padding-left: 28px;
+  padding-right: 28px;
+  width: 23px;
+  display: inline-block;
+  line-height: 24px;
+}
+.icon-yt {
+  width: 23px;
+  display: inline-block;
+  line-height: 24px;
 }

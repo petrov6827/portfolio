@@ -235,7 +235,8 @@ p {
   .main__welcome {
     margin: 0 auto;
     overflow: hidden;
-    zoom: 0.7; }
+    zoom: 0.7; 
+    display: none;}
   .main__triangle {
     top: 300px;
     position: absolute;
