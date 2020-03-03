@@ -1,0 +1,83 @@
+body {
+  font-family: "PT Sans Caption"; }
+
+.container {
+  display: flex;
+  background: #000; }
+
+header {
+  position: relative; }
+
+header .header {
+  width: 1410px;
+  background: #000;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "PT Sans Caption"; }
+
+.phone {
+  position: relative;
+  margin: 15px 20px 7px 40px; }
+  .phone a {
+    color: white;
+    display: block; }
+
+.tel_code,
+.tel_number {
+  display: none; }
+
+header.header {
+  background-color: #000;
+  margin: 0 auto;
+  display: flex; }
+
+.adress {
+  position: relative;
+  color: #fff;
+  margin-left: 300px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 25px; }
+  .adress p {
+    display: inline; }
+
+p.tel_code {
+  color: #fff;
+  display: inline; }
+
+p.tel_number {
+  color: #bf9037;
+  display: inline; }
+
+a {
+  text-decoration: none; }
+
+header .header {
+  display: flex;
+  background: #000;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "PT Sans Caption"; }
+
+.logo {
+  width: 285px;
+  height: 42px;
+  background: #000;
+  margin: 16px 0px 16px 25px; }
+
+.phone_link {
+  color: white;
+  display: block;
+  line-height: 25px;
+  font-size: 16px; }
+
+.order {
+  margin: 30px; }
+
+a.order_button {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #bf9037;
+  border-radius: 31px;
+  padding: 10px 75px; }

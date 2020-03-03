@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Sedona Выбрать отель</title>
+        <meta name="viewport" content="width=device-width, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="/js/script-ui.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+        
+    <body>
+        <header class="page-header">
+            <div class="menu">
+                <a href="index.html" class="main-nav__close"><img src="img/menu-close.png"></a>
+                <ul class="main-nav">                    
+                    <li class="main-nav__item"><a class="main-nav__item--active" href="https://petrov6827.github.io/portfolio/Sedona/index.html">Главная</a></li>
+                    <li class="main-nav__item"><a href="https://petrov6827.github.io/portfolio/Sedona/photo.html">Фото и видео</a></li>
+                    <li class="main-nav__item  main-nav__item--tablet"></li>
+                    <li class="main-nav__item"><a href="https://petrov6827.github.io/portfolio/Sedona/review.html">Форма отзыва</a></li>
+                    <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+                </ul> 
+            </div>
+            <div class="top-menu">
+                <a href="index.html" class="logo">                
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                        <img src="img/logo-sedona-mobile.svg" alt="logo">
+                    </picture>                                          
+                </a>
+                <a href="#" class="main-nav__toggle">&#9776</a>
+            </div>      
+        </header>
+
+        <section class="choose__hotel">         
+            <div class="hotel__necessary">
+                <p>Инфраструктура:</p>
+                <div><input type="checkbox" id="swim" checked=""><label for="swim">Бассейн</label></div>
+                <div><input type="checkbox" id="parking"><label for="parking">Парковка</label></div>
+                <div><input type="checkbox" id="internet"><label for="internet">WI-FI</label></div>
+            </div>
+            <div class="hotel__type">
+                <p>Тип жилья:</p>
+                <div><input type="checkbox" id="hotel" checked=""><label for="hotel">Гостиница</label></div>
+                <div><input type="checkbox" id="motel" checked><label for="motel">Мотель</label></div>
+                <div><input type="checkbox" id="apartment" checked><label for="apartment">Апартаменты</label></div>
+            </div>
+            <div class="hotel__desktop"></div>
+            <div class="hotel__price">
+                <p>
+                    <label class="price__title" for="amount">Стоимость в сутки(р):</label>
+                    <input type="text" id="amount">
+                </p>
+                <div id="slider-range"></div>
+                <a href="#" class="show__hotel">Показать</a>
+            </div>
+        </section>        
+
+        <section class="hotel__list">
+            <div class="sort__of">
+                <p class="sort__of-founded">Найдено: 3</p>
+                <span>сортировка:</span>
+                <a href="#" class="sort__of-price">По цене</a>
+                <a href="#" class="sort__of-type">По типу</a>
+                <a href="#" class="sort__of-raiting">По рейтингу</a>
+                <a href="#" class="arrow  filter-up">▲</a>
+                <a href="#" class="arrow  filter-down">▼</a>
+            </div>
+            <div class="hotel__item">
+                <div class="hotel__img"><img src="img/hotel1.jpg" width="135" height="90"></div>
+                <div class="hotel__title">Amara resort & spa</div>
+                <p class="hotel__type--info">Гостиница</p>
+                <p class="hotel__price--info">От 3500 р.</p>
+                <div>
+                    <a class="hotel__details" href="#">Подробнее</a>
+                    <a class="hotel__reserve" href="#">Забронировать</a>
+                </div>
+                <div class="star" target="blank">★★★★</div>
+                <p class="hotel__raiting">Рейтинг: 8,5</p>
+            </div>
+            <div class="hotel__item">
+                <div class="hotel__img"><img src="img/hotel2.jpg" width="135" height="90"></div>
+                <div class="hotel__title">Desert Quail inn</div>
+                <p class="hotel__type--info">Мотель</p>
+                <p class="hotel__price--info">От 2000 р.</p>
+                <div>
+                    <a class="hotel__details" href="#">Подробнее</a>
+                    <a class="hotel__reserve" href="#">Забронировать</a>
+                </div>
+                <div class="star" target="blank">★★</div>
+                <p class="hotel__raiting">Рейтинг: 8,9</p>
+            </div>
+            <div class="hotel__item">
+                <div class="hotel__img"><img src="img/hotel3.jpg" width="135" height="90"></div>
+                <div class="hotel__title">Villas at poco diablo</div>
+                <p class="hotel__type--info">Апартаменты</p>
+                <p class="hotel__price--info">От 4000 р.</p>
+                <div>
+                    <a class="hotel__details" href="#">Подробнее</a>
+                    <a class="hotel__reserve" href="#">Забронировать</a>
+                </div>
+                <div class="star" target="blank">★★★</div>
+                <p class="hotel__raiting">Рейтинг: 9,2</p>
+            </div>            
+        </section>
+
+        <footer>
+            <div class="tag">
+                <a href="http://instagram.com/" class="hashtag" target="blank">#Visitsedona</a>
+            </div>
+            <div class="icons">
+                <div class="social">
+                    <a href="https://twitter.com/" class="icon-tw tw" target="blank">t</a>
+                    <a href="https://www.facebook.com/" class="icon-fb fb" target="blank">f</a>
+                    <a href="http://www.youtube.com/" class="icon-yt youtube" target="blank"></a>
+                </div>
+            </div>
+        </footer>        
+    </body>
+</html>

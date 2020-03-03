@@ -1,0 +1,70 @@
+.page-footer {
+  background-color: #f1f1f1; }
+
+.social-links {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 80px;
+  border-bottom: 1px solid #ececec;
+  vertical-align: center; }
+
+.social-link {
+  margin-right: 30px;
+  margin-top: 30px; }
+
+.social-link--tw {
+  margin-right: 0px; }
+
+.social-link--fb {
+  margin-top: 26px; }
+
+.mishka-logo-tablet {
+  display: none; }
+
+.page-footer__copyright-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  font-family: "Verdana";
+  font-weight: bold;
+  text-decoration: none;
+  vertical-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px; }
+
+.page-footer__copyright-link img {
+  margin-top: -8px;
+  margin-left: 22px; }
+
+@media (max-width: 767px) {
+  .reviews {
+    margin: 0 auto; }
+  .page-footer__logo {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .page-footer {
+    min-height: 143px; }
+  .page-footer__wrapper {
+    position: relative; }
+  .page-footer__copyright-link {
+    position: absolute;
+    top: 40px;
+    right: 30px; }
+  .page-footer__logo {
+    position: absolute;
+    left: 30px;
+    top: 55px; }
+  .social-links {
+    border-bottom: none;
+    padding-top: 30px; }
+  a.page-footer__copyright-link:hover,
+  a.page-footer__logo:hover {
+    opacity: 0.6; }
+  a.page-footer__copyright-link:active,
+  a.page-footer__logo:active {
+    opacity: 0.3; } }
