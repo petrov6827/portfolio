@@ -1,53 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Frontend Developer junior</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend Developer junior</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
 
-    <body>
-        <header class="page-header">
-            <div class="menu">
-                <a href="index.html" class="main-nav__close"></a>
-                <ul class="main-nav">                                              
-                    <li class="main-nav__item"><a class="main-nav__item--active" href="https://petrov6827.github.io/resume-Petrov-">Резюме</a></li>                    
-                </ul> 
-            </div>              
-                <a href="#" class="main-nav__toggle">&#9776</a>              
-        </header>
-        
-        <h1>Front-end Developer junior</h1>
-        <section class="items">            
-            <a href="https://petrov6827.github.io/portfolio/Nerds" class="item">
-                <img src="img/nerds1.png" width="320"  height="208">                
-                <p class="item__title">Nerds</p>
-                <p class="item__about">Фиксированная вёрстка дизайнерской студии. html, css</p>
-            </a>
-            <a href="https://petrov6827.github.io/portfolio/Mishka" class="item">
-                <img src="img/mishka1.jpg" width="320"  height="208">                
-                <p class="item__title">Mishka</p>
-                <p class="item__about">Адаптивная вёрстка интернет-магазина. flexbox, sass, БЭМ, gulp</p>                
-            </a>
-            <a href="https://petrov6827.github.io/portfolio/Sedona" class="item">
-                <img src="img/sedona1.jpg" width="320"  height="208">                
-                <p class="item__title">Sedona</p>
-                <p class="item__about">Адаптивная вёрстка туристического сайта. flexbox, sass, БЭМ, gulp</p>                
-            </a>
-        </section>       
-
-        <footer>
-            <div class="tag">
-                Дмитрий Петров
-            </div>
-            <div class="tag">
-                <a class="contacts" href="tel: +79196554019" target="blank">+7 919 655 40 19</a>
-            </div>
-            <div class="tag">
-                <a class="contacts  email" href="email: petrov6827@gmail.com" target="blank">petrov6827@gmail.com</a>
-            </div>
-        </footer>
-             
-        <script type="text/javascript" src="js/script.js"></script>        
-    </body>
+  <body>
+    <header class="page-header">
+      <div class="menu">
+        <a href="index.html" class="main-nav__close"></a>
+        <ul class="main-nav  clearfix">
+          <div class="my_name">
+            Дмитрий Петров
+          </div>
+          <li class="main-nav__item  main-nav__item-name">Дмитрий Петров</li>
+          <li class="main-nav__item">
+            <a
+              class="main-nav__item  main-nav__item--active"
+              href="https://petrov6827.github.io/portfolio/index.html"
+              >Главная</a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a
+              class="main-nav__item"
+              href="https://petrov6827.github.io/resume-Petrov-"
+              >Обо мне</a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a
+              class="main-nav__item"
+              href="https://petrov6827.github.io/portfolio/contacts.html"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Frontend Developer junior</h1>
+      <section class="aboutme">
+        <div class="aboutme__photo">
+          <img src="img/dmitry.png" />
+        </div>
+        <div class="aboutme__text">
+          Привет, меня зовут Дмитрий. А это мое портфолио, в котором я
+          использовал:
+          <ul class="aboutme__skills">
+            <li>Знание HTML5, CSS3, JavaScript(ES6)</li>
+            <li>Фреймворк React</li>
+            <li>Препроцессор SCSS</li>
+            <li>Кроссбраузерная, адаптивная вёрстка</li>
+            <li>Github, github-pages</li>
+            <li>Cборщик Gulp</li>
+            <li>Photoshop, figma</li>
+          </ul>
+        </div>
+      </section>
+      <section class="items">
+        <a
+          href="https://petrov6827.github.io/portfolio/SuperCompany"
+          class="item"
+        >
+          <div class="item__img">
+            <img src="img/supercompany.png" width="320" height="208" />
+          </div>
+          <p class="item__title">SUPERCOMPANY</p>
+          <p class="item__about">
+            Адаптивная вёрстка. Flex, sass, БЭМ, gulp, js
+          </p>
+        </a>
+        <a href="https://petrov6827.github.io/portfolio/Psysovet" class="item">
+          <div class="item__img">
+            <img src="img/psysovet.png" width="320" height="210" />
+          </div>
+          <p class="item__title">PSYSOVET</p>
+          <p class="item__about">Фиксированная вёрстка тестового задания.</p>
+        </a>
+        <a href="https://petrov6827.github.io/portfolio/Sedona" class="item">
+          <div class="item__img">
+            <img src="img/sedona1.jpg" width="320" height="208" />
+          </div>
+          <p class="item__title">Sedona</p>
+          <p class="item__about">
+            Адаптивная вёрстка туристического сайта. flexbox, sass, БЭМ, gulp
+          </p>
+        </a>
+        <a href="https://petrov6827.github.io/portfolio/Mishka" class="item">
+          <div class="item__img">
+            <img src="img/mishka1.jpg" width="320" height="208" />
+          </div>
+          <p class="item__title">Mishka</p>
+          <p class="item__about">
+            Адаптивная вёрстка интернет-магазина. flexbox, sass, БЭМ, gulp
+          </p>
+        </a>
+        <a href="https://petrov6827.github.io/portfolio/Nerds" class="item">
+          <div class="item__img">
+            <img src="img/nerds1.png" width="320" height="208" />
+          </div>
+          <p class="item__title">Nerds</p>
+          <p class="item__about">
+            Фиксированная вёрстка дизайнерской студии. html, css
+          </p>
+        </a>
+        <a
+          href="https://petrov6827.github.io/portfolio/TestOctober"
+          class="item"
+        >
+          <div class="item__img">
+            <img src="img/october.png" width="320" height="208" />
+          </div>
+          <p class="item__title">expert</p>
+          <p class="item__about">
+            Фиксированная вёрстка сайта Экспертизы. html, scss
+          </p>
+        </a>
+        <a
+          href="https://petrov6827.github.io/portfolio/LoginSignUp"
+          class="item"
+        >
+          <div class="item__img">
+            <img src="img/LoginSignUp.png" width="320" height="208" />
+          </div>
+          <p class="item__title">SignUp form</p>
+          <p class="item__about">Форма</p>
+        </a>
+        <a href="https://petrov6827.github.io/portfolio/Photograph" class="item"
+          ><div class="item__img">
+            <img src="img/Photograph.png" width="320" height="208" />
+          </div>
+          <p class="item__title">photographer portfolio</p>
+          <p class="item__about">портфолио фотографа</p>
+        </a>
+      </section>
+    </main>
+    <footer>
+      <ul class="footer__list">
+        <li>
+          <a
+            class="tag  order"
+            href="https://petrov6827.github.io/portfolio/order.html"
+          >
+            Заказать вёрстку
+          </a>
+        </li>
+        <li class="tag">
+          <a class="contacts" href="tel: +79196554019" target="blank"
+            >+7 919 655 40 19</a
+          >
+        </li>
+        <li class="tag">
+          <a
+            class="contacts  email"
+            href="email: petrov6827@gmail.com"
+            target="blank"
+            >petrov6827@gmail.com</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/button.js"></script>
+  </body>
 </html>
