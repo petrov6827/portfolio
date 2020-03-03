@@ -1,1 +1,0 @@
-$('.banner__slider').slick();
