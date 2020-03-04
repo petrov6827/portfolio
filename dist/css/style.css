@@ -93,6 +93,10 @@ p {
   .my_name {
     display: none;
   }
+  form {
+    width: 80%;
+    font-family: 'P Tsans';
+  }
 }
 
 @media (min-width: 768px) {
@@ -101,8 +105,30 @@ p {
   }
   .main-nav {
     justify-content: flex-end;
-
     width: 768px;
+  }
+  form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  form input,
+  form label {
+    font-family: 'P Tsans';
+  }
+  form label {
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+  form input,
+  textarea {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    outline: none;
   }
 }
 
@@ -219,6 +245,7 @@ h1 {
   text-align: left;
   margin-left: 20px;
   text-align: center;
+  font-size: 30px;
 }
 .section {
   margin: 0;
@@ -335,14 +362,6 @@ p.item__title {
   color: #000;
   margin-bottom: 5px;
 }
-
-/* .item__about {
-  font-size: 16px;
-  font-weight: normal;
-  text-transform: none;
-  color: #000;
-} */
-
 .order {
   border: 2px solid #424242;
   border-radius: 20px;
@@ -356,7 +375,7 @@ h1 {
   text-align: center;
   font-family: 'P Tsans';
   margin: 10px;
-  font-size: 25px;
+  font-size: 30px;
 }
 .footer__list {
   list-style: none;
@@ -427,7 +446,6 @@ main {
   display: flex;
   justify-content: space-around;
 }
-
 .aboutme__photo {
   border-radius: 150px;
   overflow: hidden;
@@ -473,9 +491,51 @@ main {
   .aboutme__skills {
     padding-left: 18px;
   }
+  .order__promo {
+    font-family: 'P Tsans';
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+  .order__btn {
+    width: 120px;
+  }
+
+  form {
+    font-family: 'P Tsans';
+    font-size: 18px;
+    display: grid;
+    margin: 0 auto;
+  }
+
+  form input,
+  textarea {
+    font-family: 'P Tsans';
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+  }
+
+  form label {
+    margin-left: 5px;
+  }
+
+  .order__btn {
+    width: 150px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 768px) {
+  form,
+  .order__btn {
+    font-size: 24px;
+  }
+
+  form input,
+  textarea {
+    font-size: 22px;
+  }
   a.main-nav__item--active {
     color: #000;
   }
@@ -556,16 +616,17 @@ main {
     font-size: 16px;
     font-weight: normal;
     width: 50%;
+    font-size: 28px;
+    line-height: 40px;
   }
   h1 {
     font-family: 'P Tsans';
-    font-size: 30px;
+    font-size: 34px;
     font-weight: bold;
     text-align: center;
     margin: 0;
     text-align: center;
   }
-
   .items {
     display: flex;
     flex-direction: row;
@@ -744,6 +805,11 @@ main {
     margin-left: 40px;
     margin-top: 30px;
   }
+  .order__btn {
+    width: 200px;
+    margin: 0 auto;
+    border: 1.5px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -770,14 +836,7 @@ main {
   ul.footer__list {
     width: 1200px;
   }
-  .order__promo {
-    display: block;
-    margin: 30px auto;
-    margin-bottom: 50px;
-    font-size: 16px;
-    font-weight: normal;
-    width: 50%;
-  }
+
   .item:hover {
     border: 2px solid #81b3d1;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
@@ -807,7 +866,7 @@ main {
   } */
 
   h1 {
-    font-size: 30px;
+    font-size: 38px;
     margin: 10px;
     text-align: center;
     margin-bottom: 20px;
