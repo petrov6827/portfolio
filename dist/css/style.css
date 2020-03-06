@@ -113,6 +113,7 @@ p {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   form input,
@@ -491,13 +492,17 @@ main {
   .aboutme__skills {
     padding-left: 18px;
   }
-  .order__promo {
+  .order__promo,
+  .contacts__promo {
     font-family: 'P Tsans';
     font-size: 18px;
     margin-bottom: 22px;
   }
   .order__btn {
     width: 120px;
+  }
+  .order__btn:active {
+    outline: none;
   }
 
   form {
@@ -596,7 +601,6 @@ main {
     background: #f1f1f1;
     padding-top: 10px;
     padding-bottom: 10px;
-    position: absolute;
     bottom: 0;
     width: 100%;
   }
@@ -609,7 +613,8 @@ main {
   .page-header {
     margin-bottom: 20px;
   }
-  .order__promo {
+  .order__promo,
+  .contacts__promo {
     display: block;
     margin: 30px auto;
     margin-bottom: 50px;
@@ -672,8 +677,6 @@ main {
     width: 80%;
     text-transform: none;
     visibility: hidden;
-  }
-  .item__about--visible {
   }
   .items a {
     max-width: 320px;
@@ -808,7 +811,8 @@ main {
   .order__btn {
     width: 200px;
     margin: 0 auto;
-    border: 1.5px;
+    border: 2px;
+    padding: 15px;
   }
 }
 
