@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
@@ -12,5 +11,14 @@
   "homepage": "https://petrov6827.github.io/portfolio",
   "dependencies": {
     "gh-pages": "^2.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petrov6827/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/petrov6827/portfolio/issues"
+  },
+  "description": ""
 }
