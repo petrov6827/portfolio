@@ -250,8 +250,6 @@ p {
 }
 .contacts__info-item {
   margin-bottom: 15px;
-}
-.contacts__info-item {
   margin-left: 20px;
 }
 .contacts__info-item__img {
@@ -468,6 +466,20 @@ main {
   .contacts__info {
     width: 88%;
     margin: 0 auto;
+  }
+  .contacts__info-item a {
+    vertical-align: sub;
+  }
+  .order {
+    width: 150px;
+    text-transform: none;
+    font-size: 17px;
+    border-bottom: 25px;
+    background: #f1f1f1;
+    border: 1px solid black;
+    font-weight: normal;
+  }
+  .tag {
   }
 }
 
@@ -869,4 +881,3 @@ main {
     width: 1400px;
   }
 }
-
