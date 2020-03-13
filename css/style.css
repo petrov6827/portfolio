@@ -494,6 +494,8 @@ main {
   }
   .order__promo,
   .contacts__promo {
+    margin: 0 auto;
+    width: 80%;
     font-family: 'P Tsans';
     font-size: 18px;
     margin-bottom: 22px;
@@ -601,9 +603,7 @@ main {
     background: #f1f1f1;
     padding-top: 10px;
     padding-bottom: 10px;
-    bottom: 0;
     width: 100%;
-    position: absolute;
   }
   ul.footer__list {
     margin: 0 auto;
@@ -815,6 +815,10 @@ main {
     border: 2px;
     padding: 15px;
   }
+  #errorMess {
+    margin: 0 auto;
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -833,6 +837,7 @@ main {
   }
   main {
     width: 1200px;
+    margin-bottom: 30px;
   }
   footer {
     background: #f1f1f1;
