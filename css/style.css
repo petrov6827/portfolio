@@ -85,19 +85,6 @@ p {
 }
 
 /* "" */
-@media (max-width: 767px) {
-  body {
-    width: auto;
-    margin: 0 auto;
-  }
-  .my_name {
-    display: none;
-  }
-  form {
-    width: 80%;
-    font-family: 'P Tsans';
-  }
-}
 
 @media (min-width: 768px) {
   body {
@@ -132,16 +119,6 @@ p {
     outline: none;
   }
 }
-
-@media (min-width: 1200px) {
-  body {
-    display: contents;
-  }
-  .main-nav {
-    width: 1200px;
-  }
-}
-
 @font-face {
   font-family: 'P TSans';
   src: url('../fonts/ptsans.woff2') format('woff2'),
@@ -155,14 +132,12 @@ p {
   src: url('../fonts/symbols-sedona.woff') format('woff'),
     url('../fonts/symbols-sedona.woff2') format('woff2');
 }
-
 .main-nav {
   margin: 0 auto;
   width: auto;
   list-style: none;
   padding-left: 0;
 }
-
 .main-nav__item {
   font-family: 'P TSans';
   font-weight: bold;
@@ -175,17 +150,14 @@ p {
   padding: 10px;
   background: #f1f1f1;
 }
-
 .main-nav__item a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
 }
-
 .main-nav__item--active {
   color: #766357;
 }
-
 .logo {
   display: inherit;
   width: auto;
@@ -205,7 +177,6 @@ p {
   top: 6px;
   text-decoration: none;
 }
-
 .main-nav__close {
   position: absolute;
   right: 10px;
@@ -215,7 +186,6 @@ p {
   border-bottom: 3px solid #000;
   transform: rotate(45deg);
 }
-
 .main-nav__close:after {
   content: '';
   position: absolute;
@@ -226,27 +196,15 @@ p {
   border-left: 3px solid #000;
   transform: rotate(0deg);
 }
-
 .menu--show {
   display: block;
 }
-
 .top-menu {
   position: relative;
   height: 56px;
 }
-
 .toggle__hidden {
   display: none;
-}
-
-h1 {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  text-align: left;
-  margin-left: 20px;
-  text-align: center;
-  font-size: 30px;
 }
 .section {
   margin: 0;
@@ -270,18 +228,6 @@ h1 {
   padding: 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-/* .item__about {
-  font-family: 'P Tsans';
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-  text-decoration: none;
-  text-align: left;
-  margin: 0 auto 20px auto;
-  width: 80%;
-  text-transform: none;
-  color: #000;
-} */
 .item__title {
   font-family: 'P Tsans';
   font-size: 21px;
@@ -302,13 +248,6 @@ h1 {
   text-align: center;
   border: none;
 }
-.contacts__promo {
-  font-family: 'P Tsans';
-  font-size: 16px;
-  margin: 30px;
-  text-decoration: none;
-}
-
 .contacts__info-item {
   margin-bottom: 15px;
 }
@@ -342,16 +281,13 @@ h1 {
   padding: 0;
   margin: 10px;
 }
-
 .item__img {
   display: flex;
   justify-content: center;
 }
-
 .item__img:hover {
   filter: contrast(20%);
 }
-
 p.item__title {
   font-family: 'P Tsans';
   font-size: 20px;
@@ -371,11 +307,12 @@ p.item__title {
   display: flex;
   justify-content: center;
 }
-
 h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
   text-align: center;
   font-family: 'P Tsans';
-  margin: 10px;
   font-size: 30px;
 }
 .footer__list {
@@ -386,12 +323,10 @@ footer .tag a {
   text-decoration: none;
   color: #000;
 }
-
 .items a {
   text-decoration: none;
   outline: none;
 }
-
 .main-nav__item {
   font-family: 'P TSans';
   font-weight: bold;
@@ -401,11 +336,9 @@ footer .tag a {
   line-height: 40px;
   padding: 10px;
 }
-
 .main-nav__item-name {
   font-size: 26px;
 }
-
 .tag {
   text-align: center;
   text-decoration: none;
@@ -416,32 +349,26 @@ footer .tag a {
   padding: 10px;
   width: 50%;
 }
-
 .contacts__contacts {
   display: none;
 }
-
 .email {
   text-transform: none;
 }
-
 .contacts__info-item a {
   color: #000;
   text-decoration: none;
   font-family: 'P Tsans';
 }
-
 .contacts__info-item a:hover {
   color: #81b3d1;
   transition: 0.2s;
   font-weight: bold;
 }
-
 main {
   width: 100%;
   margin: 0 auto;
 }
-
 .aboutme {
   margin: 0 auto;
   display: flex;
@@ -456,15 +383,26 @@ main {
   margin-left: 10px;
   margin-top: 50px;
 }
-.aboutme__text {
+.aboutme__text,
+.contacts__promo {
   width: 55%;
   font-family: 'P Tsans';
   font-size: 16px;
   align-items: center;
   text-align: left;
 }
-
 @media (max-width: 768px) {
+  body {
+    width: auto;
+    margin: 0 auto;
+  }
+  .my_name {
+    display: none;
+  }
+  form {
+    width: 80%;
+    font-family: 'P Tsans';
+  }
   a.main-nav__item {
     color: #000;
   }
@@ -506,14 +444,12 @@ main {
   .order__btn:active {
     outline: none;
   }
-
   form {
     font-family: 'P Tsans';
     font-size: 18px;
     display: grid;
     margin: 0 auto;
   }
-
   form input,
   textarea {
     font-family: 'P Tsans';
@@ -522,13 +458,15 @@ main {
     border: none;
     padding: 10px;
   }
-
   form label {
     margin-left: 5px;
   }
-
   .order__btn {
     width: 150px;
+    margin: 0 auto;
+  }
+  .contacts__info {
+    width: 88%;
     margin: 0 auto;
   }
 }
@@ -621,16 +559,18 @@ main {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: normal;
-    width: 50%;
+    width: 70%;
     font-size: 28px;
     line-height: 40px;
   }
+
   h1 {
     font-family: 'P Tsans';
     font-size: 34px;
     font-weight: bold;
     text-align: center;
     margin: 0;
+    margin-bottom: 20px;
     text-align: center;
   }
   .items {
@@ -704,8 +644,7 @@ main {
   }
   .contacts__main {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
+    justify-content: center;
   }
   .contacts__promo {
     display: block;
@@ -713,16 +652,13 @@ main {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: normal;
-    width: 50%;
+    width: 70%;
   }
   .contacts__img {
     zoom: 0.5;
-    flex: 1.1;
-    margin-left: 5%;
   }
   .contacts__info {
-    margin-top: 100px;
-    flex: 1;
+    margin-top: 8px;
     margin-left: 30px;
   }
   .contacts__info-item__img {
@@ -800,7 +736,8 @@ main {
     margin-top: 40px;
     margin-left: 120px;
   }
-  .aboutme__text {
+  .aboutme__text,
+  .contacts__promo {
     width: 70%;
     font-family: 'P Tsans';
     font-size: 18px;
@@ -808,6 +745,11 @@ main {
     text-align: left;
     margin-left: 40px;
     margin-top: 30px;
+  }
+
+  .contacts__promo {
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
   .order__btn {
     width: 200px;
@@ -819,9 +761,21 @@ main {
     margin: 0 auto;
     font-size: 20px;
   }
+  .footer-index,
+  .footer-contacts,
+  .footer-order {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 @media (min-width: 1200px) {
+  body {
+    display: contents;
+  }
+  .main-nav {
+    width: 1200px;
+  }
   .header {
     margin: 0 95px;
     margin-bottom: 20px;
@@ -846,7 +800,6 @@ main {
   ul.footer__list {
     width: 1200px;
   }
-
   .item:hover {
     border: 2px solid #81b3d1;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
@@ -867,14 +820,6 @@ main {
     margin: 5px;
     text-align: center;
   }
-  /* .item__about {
-    font-family: 'P Tsans';
-    font-size: 18px;
-    font-weight: normal;
-    text-decoration: none;
-    text-align: left;
-  } */
-
   h1 {
     font-size: 38px;
     margin: 10px;
@@ -883,6 +828,12 @@ main {
   }
   .contacts {
     color: #000;
+  }
+  .contacts__promo {
+    width: 50%;
+  }
+  .contacts__img {
+    zoom: 0.7;
   }
   .email {
     text-transform: none;
@@ -901,7 +852,6 @@ main {
     margin-left: 0;
     margin-bottom: 30px;
   }
-
   .items a {
     min-width: 320px;
     min-height: 100px;
@@ -910,64 +860,13 @@ main {
   .main-nav__item-name {
     display: none;
   }
-  .contacts__img {
-    zoom: 0.5;
-    margin-left: 10%;
-  }
   .main-nav {
     width: 1200px;
   }
 }
-
 @media (min-width: 1400px) {
   main {
     width: 1400px;
   }
 }
-.social a {
-  background-color: #81b3d1;
-  padding: 13px;
-  font-size: 24px;
-  color: #fff;
-  font-family: 'symbols-sedona';
-  text-decoration: none;
-  max-width: 46px;
-  max-height: 48px;
-}
-.social a:hover {
-  background-color: #669dc0;
-}
-.social a:active {
-  background-color: #5495bd;
-}
-.clearfix::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.social {
-  text-align: center;
-}
 
-.hashtag {
-  text-decoration: none;
-  color: #000;
-}
-.hashtag:hover {
-  color: #81b3d1;
-}
-.hashtag:active {
-  color: #b2b2b2;
-}
-.icon-fb {
-  padding-left: 28px;
-  padding-right: 28px;
-  width: 23px;
-  display: inline-block;
-  line-height: 24px;
-}
-.icon-yt {
-  width: 23px;
-  display: inline-block;
-  line-height: 24px;
-}
