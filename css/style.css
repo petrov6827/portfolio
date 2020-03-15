@@ -7,118 +7,6 @@ p {
   margin: 0;
 }
 
-.title {
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
-  line-height: 26px;
-}
-
-[class^='icon-']::before,
-[class*=' icon-']::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-  font-weight: normal;
-  line-height: 1em;
-  font-family: 'symbols-sedona';
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-}
-
-.icon-facebook::before {
-  content: '\66';
-}
-
-/* "f" */
-.icon-twitter::before {
-  content: '\74';
-}
-
-/* "t" */
-.icon-up-dir::before {
-  content: '\25b2';
-}
-
-/* "▲" */
-.icon-down-dir::before {
-  content: '\25bc';
-}
-
-/* "▼" */
-.icon-star::before {
-  content: '\2605';
-}
-
-/* "★" */
-.icon-check-off::before {
-  content: '\2610';
-}
-
-/* "☐" */
-.icon-check-on::before {
-  content: '\2611';
-}
-
-/* "☑" */
-.icon-calendar::before {
-  content: '\e800';
-}
-
-/* "" */
-.icon-plus::before {
-  content: '\e801';
-}
-
-/* "" */
-.icon-minus::before {
-  content: '\e802';
-}
-
-/* "" */
-.icon-youtube::before {
-  content: '\f39e';
-}
-
-/* "" */
-
-@media (min-width: 768px) {
-  body {
-    margin: 0 auto;
-  }
-  .main-nav {
-    justify-content: flex-end;
-    width: 768px;
-  }
-  form {
-    width: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
-  form input,
-  form label {
-    font-family: 'P Tsans';
-  }
-  form label {
-    margin-bottom: 5px;
-    margin-left: 5px;
-  }
-  form input,
-  textarea {
-    background-color: #f1f1f1;
-    padding: 10px;
-    border: none;
-    outline: none;
-  }
-}
 @font-face {
   font-family: 'P TSans';
   src: url('../fonts/ptsans.woff2') format('woff2'),
@@ -132,70 +20,13 @@ p {
   src: url('../fonts/symbols-sedona.woff') format('woff'),
     url('../fonts/symbols-sedona.woff2') format('woff2');
 }
-.main-nav {
-  margin: 0 auto;
-  width: auto;
-  list-style: none;
-  padding-left: 0;
-}
-.main-nav__item {
-  font-family: 'P TSans';
+.title {
   font-weight: bold;
-  border-bottom: 1px solid #678fa7;
-  border-top: 1px solid #9ac2da;
-  background-color: #81b3d1;
-  text-align: center;
   font-size: 18px;
-  line-height: 40px;
-  padding: 10px;
-  background: #f1f1f1;
-}
-.main-nav__item a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-}
-.main-nav__item--active {
-  color: #766357;
-}
-.logo {
-  display: inherit;
-  width: auto;
-  margin: 0 auto;
-  position: relative;
-  margin: 0;
   text-align: center;
-  top: 5px;
+  line-height: 26px;
 }
 
-.main-nav__toggle {
-  position: absolute;
-  color: #81b3d1;
-  right: 30px;
-  font-size: 30px;
-  font-weight: bold;
-  top: 6px;
-  text-decoration: none;
-}
-.main-nav__close {
-  position: absolute;
-  right: 10px;
-  top: 7px;
-  width: 28px;
-  height: 28px;
-  border-bottom: 3px solid #000;
-  transform: rotate(45deg);
-}
-.main-nav__close:after {
-  content: '';
-  position: absolute;
-  right: -16px;
-  top: 15px;
-  width: 28px;
-  height: 28px;
-  border-left: 3px solid #000;
-  transform: rotate(0deg);
-}
 .menu--show {
   display: block;
 }
@@ -238,16 +69,7 @@ p {
   text-align: center;
   color: #000;
 }
-.main-nav__item a {
-  color: #000;
-  font-family: 'P Tsans';
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
-}
+
 .contacts__info-item {
   margin-bottom: 15px;
   margin-left: 20px;
@@ -325,18 +147,7 @@ footer .tag a {
   text-decoration: none;
   outline: none;
 }
-.main-nav__item {
-  font-family: 'P TSans';
-  font-weight: bold;
-  border-bottom: 1px solid #678fa7;
-  background-color: #e1e1e1;
-  text-align: center;
-  line-height: 40px;
-  padding: 10px;
-}
-.main-nav__item-name {
-  font-size: 26px;
-}
+
 .tag {
   text-align: center;
   text-decoration: none;
@@ -370,7 +181,7 @@ main {
 .aboutme {
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .aboutme__photo {
   border-radius: 150px;
@@ -383,13 +194,107 @@ main {
 }
 .aboutme__text,
 .contacts__promo {
-  width: 55%;
+  width: 50%;
   font-family: 'P Tsans';
   font-size: 16px;
   align-items: center;
   text-align: left;
 }
+nav {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 55px;
+}
+.main-nav {
+  margin: 0 auto;
+  width: auto;
+  list-style: none;
+  padding-left: 0;
+  float: right;
+  margin-right: 20px;
+}
+.main-nav__item {
+  display: inline-block;
+  font-family: 'P TSans';
+  font-weight: bold;
+  line-height: 40px;
+  background: #f1f1f1;
+}
+.main-nav__item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-family: 'P Tsans';
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+.main-nav__item a.active,
+.main-nav__item a:hover {
+  background: #e6e6e6;
+  transition: 0.5s;
+}
+.main-nav__item a:hover {
+  color: #81b3d2;
+}
+label.logo {
+  font-family: 'P Tsans';
+  line-height: 55px;
+  padding: 0;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #f1f1f1;
+}
+.checkbtn {
+  font-size: 25px;
+  float: right;
+  line-height: 55px;
+  color: black;
+  margin-right: 15px;
+  cursor: pointer;
+}
+#check {
+  display: none;
+}
 @media (max-width: 768px) {
+  .main-nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 55px;
+    left: 0;
+    text-align: center;
+    left: -100%;
+    transition: all 0.5s;
+    background: #f1f1f1;
+  }
+  label.logo {
+    font-size: 20px;
+    padding: 0;
+    padding-left: 20px;
+  }
+  .main-nav__item {
+    display: block;
+  }
+  .main-nav__item a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .main-nav__item a.active,
+  .main-nav__item a:hover {
+    color: #81b3d2;
+    background: #f1f1f1;
+    transition: 0.5s;
+  }
+  .checkbtn {
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
   body {
     width: auto;
     margin: 0 auto;
@@ -400,12 +305,6 @@ main {
   form {
     width: 80%;
     font-family: 'P Tsans';
-  }
-  a.main-nav__item {
-    color: #000;
-  }
-  .main-nav__item a {
-    color: #000;
   }
   .menu {
     display: none;
@@ -426,7 +325,10 @@ main {
     margin: 0 auto;
   }
   .aboutme__skills {
-    padding-left: 18px;
+    padding-left: 0px;
+  }
+  ul.aboutme__skills {
+    list-style: none;
   }
   .order__promo,
   .contacts__promo {
@@ -479,14 +381,47 @@ main {
     border: 1px solid black;
     font-weight: normal;
   }
-  .tag {
+  h1 {
+    font-size: 24px;
+    margin: 13px;
   }
 }
 
 @media (min-width: 768px) {
+  body {
+    margin: 0 auto;
+  }
+  form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  form input,
+  form label {
+    font-family: 'P Tsans';
+  }
+  form label {
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+  form input,
+  textarea {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
   form,
   .order__btn {
     font-size: 24px;
+  }
+  ul.aboutme__skills {
+    list-style: none;
+    padding-left: 0;
   }
 
   form input,
@@ -500,33 +435,7 @@ main {
     display: block;
     background: #f1f1f1;
   }
-  .main-nav__close,
-  .main-nav__toggle {
-    display: none;
-  }
-  .main-nav {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .main-nav__item {
-    background-color: #fff;
-    border: none;
-    padding: 10px 0;
-    width: 10%;
-    background: #f1f1f1;
-  }
-  .main-nav__item a {
-    color: #000;
-    font-size: 14px;
-    line-height: 26px;
-  }
-  .main-nav__item a:hover {
-    color: #81b3d2;
-    transition: 0.2s;
-  }
-  .main-nav__item a:active {
-    color: #b2b2b2;
-  }
+
   .top-menu {
     position: absolute;
     height: 56px;
@@ -546,16 +455,14 @@ main {
     margin-right: 50%;
     width: 20%;
   }
-  .main-nav__item-name {
-    display: none;
-  }
   footer {
     background: #f1f1f1;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
   }
-  ul.footer__list {
+  ul.footer__list,
+  nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -563,6 +470,7 @@ main {
   }
   .page-header {
     margin-bottom: 20px;
+    background: #f1f1f1;
   }
   .order__promo,
   .contacts__promo {
@@ -575,14 +483,15 @@ main {
     font-size: 28px;
     line-height: 40px;
   }
-
+  .order__promo {
+    width: 50%;
+  }
   h1 {
     font-family: 'P Tsans';
     font-size: 34px;
     font-weight: bold;
     text-align: center;
     margin: 0;
-    margin-bottom: 20px;
     text-align: center;
   }
   .items {
@@ -635,19 +544,7 @@ main {
     max-width: 320px;
     min-height: 100px;
   }
-  .main-nav__item-name {
-    justify-content: flex-start;
-  }
-  .order {
-    border: 2px solid #424242;
-    border-radius: 20px;
-    padding: 5px;
-    color: #000;
-  }
-  .order a {
-    color: #000;
-    text-decoration: none;
-  }
+
   .order:hover {
     border: 2px solid #81b3d1;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
@@ -658,14 +555,7 @@ main {
     display: flex;
     justify-content: center;
   }
-  .contacts__promo {
-    display: block;
-    margin: 30px auto;
-    margin-bottom: 50px;
-    font-size: 16px;
-    font-weight: normal;
-    width: 70%;
-  }
+
   .contacts__img {
     zoom: 0.5;
   }
@@ -691,11 +581,22 @@ main {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     width: auto;
     padding: 5px 10px;
     margin: 5px;
+  }
+  .order {
+    border: 2px solid #424242;
+    border-radius: 20px;
+    padding: 5px;
+    color: #000;
+    text-transform: none;
+  }
+  .order a {
+    color: #000;
+    text-decoration: none;
   }
   .icons {
     display: inline-block;
@@ -730,9 +631,6 @@ main {
   .order a:hover {
     color: #000;
   }
-  .main-nav__item-name {
-    display: none;
-  }
   .aboutme {
     margin: 0 auto;
     display: flex;
@@ -752,16 +650,16 @@ main {
   .contacts__promo {
     width: 70%;
     font-family: 'P Tsans';
-    font-size: 18px;
+    font-size: 28px;
     align-items: center;
     text-align: left;
     margin-left: 40px;
     margin-top: 30px;
   }
-
   .contacts__promo {
     margin: 0 auto;
     margin-bottom: 40px;
+    margin-top: 20px;
   }
   .order__btn {
     width: 200px;
@@ -779,18 +677,14 @@ main {
     position: absolute;
     bottom: 0;
   }
+  .checkbtn {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
   body {
     display: contents;
-  }
-  .main-nav {
-    width: 1200px;
-  }
-  .header {
-    margin: 0 95px;
-    margin-bottom: 20px;
   }
   .top-menu {
     margin-left: -93px;
@@ -809,7 +703,8 @@ main {
     background: #f1f1f1;
     padding-top: 15px;
   }
-  ul.footer__list {
+  ul.footer__list,
+  nav {
     width: 1200px;
   }
   .item:hover {
@@ -834,9 +729,7 @@ main {
   }
   h1 {
     font-size: 38px;
-    margin: 10px;
     text-align: center;
-    margin-bottom: 20px;
   }
   .contacts {
     color: #000;
@@ -868,12 +761,6 @@ main {
     min-width: 320px;
     min-height: 100px;
     margin-bottom: 10px;
-  }
-  .main-nav__item-name {
-    display: none;
-  }
-  .main-nav {
-    width: 1200px;
   }
 }
 @media (min-width: 1400px) {
