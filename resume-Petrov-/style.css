@@ -1,25 +1,26 @@
-
-h1, h2, h3 {
-    font-weight: 400;
-    margin-bottom: 0;
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 h1 {
-    font-size: 36px;
-    border-bottom: 1px grey solid;
-    margin-bottom: 8px;
-    text-align: center;
+  font-size: 36px;
+  border-bottom: 1px grey solid;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #header {
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 32px;        
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 /* #header h1,
@@ -31,11 +32,11 @@ h3 {
 } */
 
 #footer {
-    margin-top: 64px;
-    text-align: center;    
+  margin-top: 64px;
+  text-align: center;
 }
 
 p.about {
-    display: inline-block;
-    max-width: 50%;
+  display: inline-block;
+  max-width: 50%;
 }
