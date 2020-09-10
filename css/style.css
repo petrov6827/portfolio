@@ -105,9 +105,7 @@ p {
   display: flex;
   justify-content: center;
 }
-.item__img:hover {
-  filter: contrast(20%);
-}
+
 p.item__title {
   font-family: 'P Tsans';
   font-size: 20px;
@@ -232,11 +230,11 @@ nav {
   border-radius: 3px;
 }
 .main-nav__item a.active,
-.main-nav__item a:hover {
+.main-nav__item a:{
   background: #e6e6e6;
   transition: 0.5s;
 }
-.main-nav__item a:hover {
+.main-nav__item a:{
   color: #81b3d2;
 }
 label.logo {
@@ -512,11 +510,10 @@ label.logo {
     padding: 0;
   }
   .item:hover {
-    border: 2px solid #81b3d1;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
-    transition: 0.6s;
+    box-shadow: none;
+    transition-duration: 0.6s;
   }
-  img {
+  .item__img {
     text-align: center;
     margin-bottom: 10px;
   }
@@ -590,9 +587,10 @@ label.logo {
   .order {
     border: 2px solid #424242;
     border-radius: 20px;
-    padding: 5px;
+    padding: 5px 15px;
     color: #000;
     text-transform: none;
+    outline: none;
   }
   .order a {
     color: #000;
