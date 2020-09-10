@@ -7,10 +7,8 @@ h1 {
 .item {
   width: 320px;
   overflow: hidden;
-  border: 1px solid #f1f1f1;
   border-radius: 5px;
   padding: 20px;
-  border: 1px solid #f1f1f1;
   border-radius: 5px;
   font-family: "P Tsans";
   font-size: 14px;
@@ -20,14 +18,14 @@ h1 {
   text-align: left;
   color: #000000; }
   .item:hover {
-    border: 2px solid #81b3d1;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
-    transition: 0.4s; }
+    border: none;
+    box-shadow: none;
+    transition-duration: 0.4s; }
   .item:active {
     color: #b2b2b2;
     box-shadow: none;
     transition: 0.1s;
-    border: 2px solid #000; }
+    border: none; }
 
 .item__title {
   font-family: "P Tsans";
