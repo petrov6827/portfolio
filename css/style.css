@@ -254,7 +254,13 @@ label.logo {
 #check {
   display: none;
 }
+
 @media (max-width: 768px) {
+  .aboutme__skills {
+    padding-left: 25px;
+    font-size: 15px;
+    line-height: 22px;
+  }
   .main-nav {
     position: fixed;
     width: 100%;
@@ -319,12 +325,8 @@ label.logo {
     width: 320px;
     margin: 0 auto;
   }
-  .aboutme__skills {
-    padding-left: 0px;
-  }
-  ul.aboutme__skills {
-    list-style: none;
-  }
+
+
   .order__promo,
   .contacts__promo {
     margin: 0 auto;
@@ -383,6 +385,11 @@ label.logo {
 }
 
 @media (min-width: 768px) {
+  .aboutme__skills {
+    padding-left: 45px;
+    font-size: 24px;
+    line-height: 32px;
+  }
   body {
     margin: 0 auto;
   }
@@ -414,10 +421,7 @@ label.logo {
   .order__btn {
     font-size: 24px;
   }
-  ul.aboutme__skills {
-    list-style: none;
-    padding-left: 0;
-  }
+
 
   form input,
   textarea {
