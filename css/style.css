@@ -527,15 +527,13 @@ label.logo {
     text-align: center;
   }
   .item__about {
-    position: absolute;
     top: 40px;
-    color: white;
+    color: black;
     font-size: 16px;
     font-weight: normal;
-    margin: 0 30px 20px 30px;
+    margin: 0 30px 10px 30px;
     width: 80%;
     text-transform: none;
-    visibility: hidden;
   }
   .items a {
     max-width: 320px;
