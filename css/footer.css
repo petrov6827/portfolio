@@ -106,3 +106,7 @@
     margin-bottom: 30px; }
   .tag {
     margin-top: 20px; } }
+footer {
+  position: fixed;
+  bottom: 0;
+}
