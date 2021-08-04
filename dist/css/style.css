@@ -7,114 +7,6 @@ p {
   margin: 0;
 }
 
-.title {
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
-  line-height: 26px;
-}
-
-[class^='icon-']::before,
-[class*=' icon-']::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-  font-weight: normal;
-  line-height: 1em;
-  font-family: 'symbols-sedona';
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-}
-
-.icon-facebook::before {
-  content: '\66';
-}
-
-/* "f" */
-.icon-twitter::before {
-  content: '\74';
-}
-
-/* "t" */
-.icon-up-dir::before {
-  content: '\25b2';
-}
-
-/* "▲" */
-.icon-down-dir::before {
-  content: '\25bc';
-}
-
-/* "▼" */
-.icon-star::before {
-  content: '\2605';
-}
-
-/* "★" */
-.icon-check-off::before {
-  content: '\2610';
-}
-
-/* "☐" */
-.icon-check-on::before {
-  content: '\2611';
-}
-
-/* "☑" */
-.icon-calendar::before {
-  content: '\e800';
-}
-
-/* "" */
-.icon-plus::before {
-  content: '\e801';
-}
-
-/* "" */
-.icon-minus::before {
-  content: '\e802';
-}
-
-/* "" */
-.icon-youtube::before {
-  content: '\f39e';
-}
-
-/* "" */
-@media (max-width: 767px) {
-  body {
-    width: auto;
-    margin: 0 auto;
-  }
-  .my_name {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    margin: 0 auto;
-  }
-  .main-nav {
-    justify-content: flex-end;
-
-    width: 768px;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    display: contents;
-  }
-  .main-nav {
-    width: 1200px;
-  }
-}
-
 @font-face {
   font-family: 'P TSans';
   src: url('../fonts/ptsans.woff2') format('woff2'),
@@ -128,97 +20,22 @@ p {
   src: url('../fonts/symbols-sedona.woff') format('woff'),
     url('../fonts/symbols-sedona.woff2') format('woff2');
 }
-
-.main-nav {
-  margin: 0 auto;
-  width: auto;
-  list-style: none;
-  padding-left: 0;
-}
-
-.main-nav__item {
-  font-family: 'P TSans';
+.title {
   font-weight: bold;
-  border-bottom: 1px solid #678fa7;
-  border-top: 1px solid #9ac2da;
-  background-color: #81b3d1;
-  text-align: center;
   font-size: 18px;
-  line-height: 40px;
-  padding: 10px;
-  background: #f1f1f1;
-}
-
-.main-nav__item a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.main-nav__item--active {
-  color: #766357;
-}
-
-.logo {
-  display: inherit;
-  width: auto;
-  margin: 0 auto;
-  position: relative;
-  margin: 0;
   text-align: center;
-  top: 5px;
-}
-
-.main-nav__toggle {
-  position: absolute;
-  color: #81b3d1;
-  right: 30px;
-  font-size: 30px;
-  font-weight: bold;
-  top: 6px;
-  text-decoration: none;
-}
-
-.main-nav__close {
-  position: absolute;
-  right: 10px;
-  top: 7px;
-  width: 28px;
-  height: 28px;
-  border-bottom: 3px solid #000;
-  transform: rotate(45deg);
-}
-
-.main-nav__close:after {
-  content: '';
-  position: absolute;
-  right: -16px;
-  top: 15px;
-  width: 28px;
-  height: 28px;
-  border-left: 3px solid #000;
-  transform: rotate(0deg);
+  line-height: 26px;
 }
 
 .menu--show {
   display: block;
 }
-
 .top-menu {
   position: relative;
   height: 56px;
 }
-
 .toggle__hidden {
   display: none;
-}
-
-h1 {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  text-align: left;
-  margin-left: 20px;
-  text-align: center;
 }
 .section {
   margin: 0;
@@ -232,7 +49,6 @@ h1 {
 .item {
   display: flex;
   flex-direction: column;
-  border: 2px solid #202020;
   border-radius: 5px;
   box-sizing: border-box;
   margin-top: 20px;
@@ -242,18 +58,6 @@ h1 {
   padding: 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-/* .item__about {
-  font-family: 'P Tsans';
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-  text-decoration: none;
-  text-align: left;
-  margin: 0 auto 20px auto;
-  width: 80%;
-  text-transform: none;
-  color: #000;
-} */
 .item__title {
   font-family: 'P Tsans';
   font-size: 21px;
@@ -264,27 +68,8 @@ h1 {
   text-align: center;
   color: #000;
 }
-.main-nav__item a {
-  color: #000;
-  font-family: 'P Tsans';
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
-}
-.contacts__promo {
-  font-family: 'P Tsans';
-  font-size: 16px;
-  margin: 30px;
-  text-decoration: none;
-}
-
 .contacts__info-item {
   margin-bottom: 15px;
-}
-.contacts__info-item {
   margin-left: 20px;
 }
 .contacts__info-item__img {
@@ -297,7 +82,7 @@ h1 {
 .order {
   border: 2px solid #424242;
   border-radius: 20px;
-  padding: 5px;
+  padding: 5px 15px;
   color: #000;
 }
 .order a {
@@ -309,19 +94,13 @@ h1 {
   text-decoration: none;
   font-weight: 500;
   overflow: hidden;
-  border: 2px solid #424242;
   border-radius: 10px;
   padding: 0;
   margin: 10px;
 }
-
 .item__img {
   display: flex;
   justify-content: center;
-}
-
-.item__img:hover {
-  filter: contrast(20%);
 }
 
 p.item__title {
@@ -335,14 +114,6 @@ p.item__title {
   color: #000;
   margin-bottom: 5px;
 }
-
-/* .item__about {
-  font-size: 16px;
-  font-weight: normal;
-  text-transform: none;
-  color: #000;
-} */
-
 .order {
   border: 2px solid #424242;
   border-radius: 20px;
@@ -351,12 +122,13 @@ p.item__title {
   display: flex;
   justify-content: center;
 }
-
 h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
   text-align: center;
   font-family: 'P Tsans';
-  margin: 10px;
-  font-size: 25px;
+  font-size: 30px;
 }
 .footer__list {
   list-style: none;
@@ -366,24 +138,9 @@ footer .tag a {
   text-decoration: none;
   color: #000;
 }
-
 .items a {
   text-decoration: none;
   outline: none;
-}
-
-.main-nav__item {
-  font-family: 'P TSans';
-  font-weight: bold;
-  border-bottom: 1px solid #678fa7;
-  background-color: #e1e1e1;
-  text-align: center;
-  line-height: 40px;
-  padding: 10px;
-}
-
-.main-nav__item-name {
-  font-size: 26px;
 }
 
 .tag {
@@ -396,38 +153,31 @@ footer .tag a {
   padding: 10px;
   width: 50%;
 }
-
 .contacts__contacts {
   display: none;
 }
-
 .email {
   text-transform: none;
 }
-
 .contacts__info-item a {
   color: #000;
   text-decoration: none;
   font-family: 'P Tsans';
 }
-
 .contacts__info-item a:hover {
   color: #81b3d1;
   transition: 0.2s;
   font-weight: bold;
 }
-
 main {
   width: 100%;
   margin: 0 auto;
 }
-
 .aboutme {
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-
 .aboutme__photo {
   border-radius: 150px;
   overflow: hidden;
@@ -437,20 +187,125 @@ main {
   margin-left: 10px;
   margin-top: 50px;
 }
-.aboutme__text {
-  width: 55%;
+.aboutme__text,
+.contacts__promo {
+  width: 50%;
   font-family: 'P Tsans';
   font-size: 16px;
   align-items: center;
   text-align: left;
 }
+nav {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 55px;
+}
+.main-nav {
+  margin: 0 auto;
+  width: auto;
+  list-style: none;
+  padding-left: 0;
+  float: right;
+  margin-right: 20px;
+}
+.main-nav__item {
+  display: inline-block;
+  font-family: 'P TSans';
+  font-weight: bold;
+  line-height: 40px;
+  background: #f1f1f1;
+}
+.main-nav__item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-family: 'P Tsans';
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+.main-nav__item a.active,
+.main-nav__item a:{
+  background: #e6e6e6;
+  transition: 0.5s;
+}
+.main-nav__item a:{
+  color: #81b3d2;
+}
+label.logo {
+  font-family: 'P Tsans';
+  line-height: 55px;
+  padding: 0;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #f1f1f1;
+}
+.checkbtn {
+  font-size: 25px;
+  float: right;
+  line-height: 55px;
+  color: black;
+  margin-right: 15px;
+  cursor: pointer;
+}
+#check {
+  display: none;
+}
 
 @media (max-width: 768px) {
-  a.main-nav__item {
-    color: #000;
+  .aboutme__skills {
+    padding-left: 25px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .main-nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 55px;
+    left: 0;
+    text-align: center;
+    left: -100%;
+    transition: all 0.5s;
+    background: #f1f1f1;
+  }
+  label.logo {
+    font-size: 20px;
+    padding: 0;
+    padding-left: 20px;
+  }
+  .main-nav__item {
+    display: block;
   }
   .main-nav__item a {
-    color: #000;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .main-nav__item a.active,
+  .main-nav__item a:hover {
+    color: #81b3d2;
+    background: #f1f1f1;
+    transition: 0.5s;
+  }
+  .checkbtn {
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  body {
+    width: auto;
+    margin: 0 auto;
+  }
+  .my_name {
+    display: none;
+  }
+  form {
+    width: 80%;
+    font-family: 'P Tsans';
   }
   .menu {
     display: none;
@@ -470,12 +325,108 @@ main {
     width: 320px;
     margin: 0 auto;
   }
-  .aboutme__skills {
-    padding-left: 18px;
+
+
+  .order__promo,
+  .contacts__promo {
+    margin: 0 auto;
+    width: 80%;
+    font-family: 'P Tsans';
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+  .order__btn {
+    width: 120px;
+  }
+  .order__btn:active {
+    outline: none;
+  }
+  form {
+    font-family: 'P Tsans';
+    font-size: 18px;
+    display: grid;
+    margin: 0 auto;
+  }
+  form input,
+  textarea {
+    font-family: 'P Tsans';
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+  }
+  form label {
+    margin-left: 5px;
+  }
+  .order__btn {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .contacts__info {
+    width: 88%;
+    margin: 0 auto;
+  }
+  .contacts__info-item a {
+    vertical-align: sub;
+  }
+  .order {
+    width: 150px;
+    text-transform: none;
+    font-size: 17px;
+    border-bottom: 25px;
+    background: #f1f1f1;
+    border: 1px solid black;
+    font-weight: normal;
+  }
+  h1 {
+    font-size: 24px;
+    margin: 13px;
   }
 }
 
 @media (min-width: 768px) {
+  .aboutme__skills {
+    padding-left: 45px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  body {
+    margin: 0 auto;
+  }
+  form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  form input,
+  form label {
+    font-family: 'P Tsans';
+  }
+  form label {
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+  form input,
+  textarea {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  form,
+  .order__btn {
+    font-size: 24px;
+  }
+
+
+  form input,
+  textarea {
+    font-size: 22px;
+  }
   a.main-nav__item--active {
     color: #000;
   }
@@ -483,33 +434,7 @@ main {
     display: block;
     background: #f1f1f1;
   }
-  .main-nav__close,
-  .main-nav__toggle {
-    display: none;
-  }
-  .main-nav {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .main-nav__item {
-    background-color: #fff;
-    border: none;
-    padding: 10px 0;
-    width: 10%;
-    background: #f1f1f1;
-  }
-  .main-nav__item a {
-    color: #000;
-    font-size: 14px;
-    line-height: 26px;
-  }
-  .main-nav__item a:hover {
-    color: #81b3d2;
-    transition: 0.2s;
-  }
-  .main-nav__item a:active {
-    color: #b2b2b2;
-  }
+
   .top-menu {
     position: absolute;
     height: 56px;
@@ -529,18 +454,14 @@ main {
     margin-right: 50%;
     width: 20%;
   }
-  .main-nav__item-name {
-    display: none;
-  }
   footer {
     background: #f1f1f1;
     padding-top: 10px;
     padding-bottom: 10px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
   }
-  ul.footer__list {
+  ul.footer__list,
+  nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -548,24 +469,30 @@ main {
   }
   .page-header {
     margin-bottom: 20px;
+    background: #f1f1f1;
   }
-  .order__promo {
+  .order__promo,
+  .contacts__promo {
     display: block;
     margin: 30px auto;
     margin-bottom: 50px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
+    width: 70%;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .order__promo {
     width: 50%;
   }
   h1 {
     font-family: 'P Tsans';
-    font-size: 30px;
+    font-size: 34px;
     font-weight: bold;
     text-align: center;
     margin: 0;
     text-align: center;
   }
-
   .items {
     display: flex;
     flex-direction: row;
@@ -578,17 +505,15 @@ main {
     position: relative;
     width: 30%;
     overflow: hidden;
-    border: 1px solid #e1e1e1;
     border-radius: 10px;
     margin-right: 14px;
     padding: 0;
   }
   .item:hover {
-    border: 2px solid #81b3d1;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
-    transition: 0.6s;
+    box-shadow: none;
+    transition-duration: 0.6s;
   }
-  img {
+  .item__img {
     text-align: center;
     margin-bottom: 10px;
   }
@@ -602,33 +527,17 @@ main {
     text-align: center;
   }
   .item__about {
-    position: absolute;
     top: 40px;
-    color: white;
+    color: black;
     font-size: 16px;
     font-weight: normal;
-    margin: 0 30px 20px 30px;
+    margin: 0 30px 10px 30px;
     width: 80%;
     text-transform: none;
-    visibility: hidden;
   }
-
   .items a {
     max-width: 320px;
     min-height: 100px;
-  }
-  .main-nav__item-name {
-    justify-content: flex-start;
-  }
-  .order {
-    border: 2px solid #424242;
-    border-radius: 20px;
-    padding: 5px;
-    color: #000;
-  }
-  .order a {
-    color: #000;
-    text-decoration: none;
   }
   .order:hover {
     border: 2px solid #81b3d1;
@@ -638,25 +547,13 @@ main {
   }
   .contacts__main {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
-  }
-  .contacts__promo {
-    display: block;
-    margin: 30px auto;
-    margin-bottom: 50px;
-    font-size: 16px;
-    font-weight: normal;
-    width: 50%;
+    justify-content: center;
   }
   .contacts__img {
     zoom: 0.5;
-    flex: 1.1;
-    margin-left: 5%;
   }
   .contacts__info {
-    margin-top: 100px;
-    flex: 1;
+    margin-top: 8px;
     margin-left: 30px;
   }
   .contacts__info-item__img {
@@ -677,11 +574,23 @@ main {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     width: auto;
     padding: 5px 10px;
     margin: 5px;
+  }
+  .order {
+    border: 2px solid #424242;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: #000;
+    text-transform: none;
+    outline: none;
+  }
+  .order a {
+    color: #000;
+    text-decoration: none;
   }
   .icons {
     display: inline-block;
@@ -716,9 +625,6 @@ main {
   .order a:hover {
     color: #000;
   }
-  .main-nav__item-name {
-    display: none;
-  }
   .aboutme {
     margin: 0 auto;
     display: flex;
@@ -734,21 +640,45 @@ main {
     margin-top: 40px;
     margin-left: 120px;
   }
-  .aboutme__text {
+  .aboutme__text,
+  .contacts__promo {
     width: 70%;
     font-family: 'P Tsans';
-    font-size: 18px;
+    font-size: 28px;
     align-items: center;
     text-align: left;
     margin-left: 40px;
     margin-top: 30px;
   }
+  .contacts__promo {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  .order__btn {
+    width: 200px;
+    margin: 0 auto;
+    border: 2px;
+    padding: 15px;
+  }
+  #errorMess {
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .footer-index,
+  .footer-contacts,
+  .footer-order {
+    position: absolute;
+    bottom: 0;
+  }
+  .checkbtn {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
-  .header {
-    margin: 0 95px;
-    margin-bottom: 20px;
+  body {
+    display: contents;
   }
   .top-menu {
     margin-left: -93px;
@@ -761,32 +691,25 @@ main {
   }
   main {
     width: 1200px;
+    margin-bottom: 30px;
   }
   footer {
     background: #f1f1f1;
     padding-top: 15px;
   }
-  ul.footer__list {
+  ul.footer__list,
+  nav {
     width: 1200px;
   }
-  .order__promo {
-    display: block;
-    margin: 30px auto;
-    margin-bottom: 50px;
-    font-size: 20px;
-    font-weight: normal;
-    width: 50%;
-  }
   .item:hover {
-    border: 2px solid #81b3d1;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
-    transition: 0.2s;
+    border: none;
+    box-shadow: none;
+    transition-duration: 0.2s;
   }
   .item:active {
-    color: #b2b2b2;
     box-shadow: none;
-    transition: 0.1s;
-    border: 2px solid #000;
+    transition-duration: 0.1s;
+    border: none;
   }
   .item__title {
     font-family: 'P Tsans';
@@ -797,22 +720,18 @@ main {
     margin: 5px;
     text-align: center;
   }
-  /* .item__about {
-    font-family: 'P Tsans';
-    font-size: 18px;
-    font-weight: normal;
-    text-decoration: none;
-    text-align: left;
-  } */
-
   h1 {
-    font-size: 30px;
-    margin: 10px;
+    font-size: 38px;
     text-align: center;
-    margin-bottom: 20px;
   }
   .contacts {
     color: #000;
+  }
+  .contacts__promo {
+    width: 50%;
+  }
+  .contacts__img {
+    zoom: 0.7;
   }
   .email {
     text-transform: none;
@@ -831,73 +750,14 @@ main {
     margin-left: 0;
     margin-bottom: 30px;
   }
-
   .items a {
     min-width: 320px;
     min-height: 100px;
     margin-bottom: 10px;
   }
-  .main-nav__item-name {
-    display: none;
-  }
-  .contacts__img {
-    zoom: 0.5;
-    margin-left: 10%;
-  }
-  .main-nav {
-    width: 1200px;
-  }
 }
-
 @media (min-width: 1400px) {
   main {
     width: 1400px;
   }
-}
-.social a {
-  background-color: #81b3d1;
-  padding: 13px;
-  font-size: 24px;
-  color: #fff;
-  font-family: 'symbols-sedona';
-  text-decoration: none;
-  max-width: 46px;
-  max-height: 48px;
-}
-.social a:hover {
-  background-color: #669dc0;
-}
-.social a:active {
-  background-color: #5495bd;
-}
-.clearfix::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.social {
-  text-align: center;
-}
-
-.hashtag {
-  text-decoration: none;
-  color: #000;
-}
-.hashtag:hover {
-  color: #81b3d1;
-}
-.hashtag:active {
-  color: #b2b2b2;
-}
-.icon-fb {
-  padding-left: 28px;
-  padding-right: 28px;
-  width: 23px;
-  display: inline-block;
-  line-height: 24px;
-}
-.icon-yt {
-  width: 23px;
-  display: inline-block;
-  line-height: 24px;
 }
