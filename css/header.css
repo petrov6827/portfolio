@@ -30,7 +30,13 @@
   position: relative;
   margin: 0;
   text-align: center;
-  top: 5px; }
+  top: 5px; 
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.8;}
 
 .main-nav__toggle {
   position: absolute;
