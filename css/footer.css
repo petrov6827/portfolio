@@ -68,7 +68,9 @@
     line-height: 26px;
     font-weight: normal;
     text-decoration: none;
-    padding-bottom: 30px; }
+    padding-bottom: 30px; 
+    position: fixed;
+  }
   .tag {
     display: inline-block;
     text-decoration: none;
