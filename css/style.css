@@ -762,3 +762,7 @@ label.logo {
     height: calc(100vh - 180px);
   }
 }
+
+footer {
+  position: fixed;
+}
