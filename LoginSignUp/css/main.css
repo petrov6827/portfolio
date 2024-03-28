@@ -1,9 +1,13 @@
 @media (max-width: 300px) {
   body {
-    margin: 0;
     width: auto;
     height: auto;
     background: #F4F5FC;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-family: 'Work Sans', Serif; }
   form {
     width: 80%;
@@ -200,8 +204,7 @@
     line-height: 24px;
     color: #fff;
     background: #5A61ED;
-    margin: 25px 55px;
-    height: 44px;}
+    margin: 25px 55px; }
   .round {
     content: "";
     position: absolute;
@@ -211,8 +214,14 @@
 
 @media (min-width: 300px) and (max-width: 800px) {
   body {
+    width: 800px;
+    height: 600px;
     background: #F4F5FC;
-    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-family: 'Work Sans', Serif; }
   form {
     margin: 0 auto;
@@ -411,8 +420,7 @@
     line-height: 24px;
     color: #fff;
     background: #5A61ED;
-    margin: 25px 55px;
-    height: 44px; }
+    margin: 25px 55px; }
   .round {
     content: "";
     position: absolute;
@@ -649,7 +657,6 @@
   .login_link {
     color: #5A61ED; }
   .send_btn {
-    height: 44px;
     position: absolute;
     font-family: PT Sans;
     font-style: normal;

@@ -759,10 +759,5 @@ label.logo {
 @media (min-width: 1400px) {
   main {
     width: 1400px;
-    height: calc(100vh - 180px);
   }
-}
-
-footer {
-  position: fixed;
 }

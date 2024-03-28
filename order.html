@@ -1,114 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, maximum-scale=1" />
-    <title>Frontend Developer</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Frontend Developer junior</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
+
   <body>
     <header class="page-header">
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Дмитрий Петров</label>
-        <ul class="main-nav">
-          <li class="main-nav__item">
-            <a
-              class="main-nav__item"
-              href="https://petrov6827.github.io/portfolio/index.html"
-              >Главная</a
+      <div class="menu">
+          <ul class="main-nav  clearfix">
+              <div class="my_name">
+                  Дмитрий Петров
+              </div>
+              <li class="main-nav__item  main-nav__item-name">Дмитрий Петров</li>
+              <li class="main-nav__item"><a class="main-nav__item" href="https://petrov6827.github.io/portfolio/index.html">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__item" href="https://petrov6827.github.io/resume-Petrov-">Обо мне</a></li>
+              <li class="main-nav__item"><a class="main-nav__item" href="https://petrov6827.github.io/portfolio/contacts.html"">Контакты</a></li>                    
+          </ul> 
+      </div>             
+    </header>
+    
+    <h1>Заказать вёрстку сайта</h1>
+    <p class="order__promo">
+        Для определения стоимости моей работы и сроков выполнения, мне необходимо ознакомиться с макетами задания и ТЗ (если имеется)
+    <p>
+    <form></form>
+    <footer>
+        <ul class="footer__list">
+          <li class="tag">
+            <a class="contacts" href="tel: +79196554019" target="blank"
+              >+7 919 655 40 19</a
             >
           </li>
-          <li class="main-nav__item">
+          <li class="tag">
             <a
-              class="main-nav__item"
-              href="https://petrov6827.github.io/resume-Petrov-"
-              >Обо мне</a
-            >
-          </li>
-          <li class="main-nav__item">
-            <a
-              class="main-nav__item"
-              href="https://petrov6827.github.io/portfolio/contacts.html"
-              >Контакты</a
+              class="contacts  email"
+              href="email: petrov6827@gmail.com"
+              target="blank"
+              >petrov6827@gmail.com</a
             >
           </li>
         </ul>
-      </nav>
-    </header>
-    <h1>Заказать вёрстку сайта</h1>
-    <p class="order__promo">
-      Для определения стоимости моей работы и сроков выполнения, мне необходимо
-      ознакомиться с макетами задания и ТЗ (если имеется)
-    </p>
-
-    <p></p>
-    <form id="mailForm">
-      <label for="name">Ваше имя:</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Заказчик"
-        onfocus="name.focus"
-      /><br />
-      <label for="email">Электронная почта:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="example@gmail.com"
-      /><br />
-      <label for="tel">Телефон:</label>
-      <input type="tel" id="tel" name="tel" placeholder="+79001234567" /><br />
-      <label for="files">Макет и техзадание:</label>
-      <input
-        type="text"
-        id="files"
-        name="files"
-        placeholder="Ссылка на макет в облаке"
-      /><br />
-      <label for="message">Дополнительная информация:</label>
-      <textarea
-        class=""
-        name="message"
-        id="message"
-        cols="50"
-        rows="5"
-        placeholder="Дополнительная информация и пожелания"
-      ></textarea
-      ><br />
-      <input
-        class="order  order__btn"
-        type="submit"
-        id="sendMail"
-        value="Отправить"
-      />
-    </form>
-    <div id="errorMess"></div>
-    <footer class="footer-order">
-      <ul class="footer__list">
-        <li class="tag">
-          <a class="contacts" href="tel: +79196554019" target="blank"
-            >+7 919 655 40 19</a
-          >
-        </li>
-        <li class="tag">
-          <a
-            class="contacts  email"
-            href="email: petrov6827@gmail.com"
-            target="blank"
-            >petrov6827@gmail.com</a
-          >
-        </li>
-      </ul>
-    </footer>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/formOrder.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      </footer>
+    <script type="text/javascript" src="js/script.js"></script>        
   </body>
 </html>
